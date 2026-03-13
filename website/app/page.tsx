@@ -588,7 +588,7 @@ function ServicesPage({goTo}:{goTo:(p:Page)=>void}) {
       <section className="page-section section-divider">
         <div style={{maxWidth:1200,margin:'0 auto'}}>
           {SERVICES.map((s,i)=>(
-            <div key={s.title} className="reveal" style={{transitionDelay:`${i*.07}s`,display:'grid',gridTemplateColumns:'80px 1fr 1fr',gap:'3rem',padding:'3.5rem 0',borderBottom:'1px solid rgba(255,255,255,.06)',alignItems:'start'}} className={`services-grid-row reveal`}>
+            <div key={s.title} className="services-grid-row reveal" style={{transitionDelay:`${i*.07}s`,display:'grid',gridTemplateColumns:'80px 1fr 1fr',gap:'3rem',padding:'3.5rem 0',borderBottom:'1px solid rgba(255,255,255,.06)',alignItems:'start'}}>
               <div className="font-mono" style={{fontSize:'10px',color:'#2D5BFF',letterSpacing:'.3em',paddingTop:'.5rem'}}>{s.num}</div>
               <div>
                 <h2 className="display-service" style={{marginBottom:'1.25rem'}}>{s.title}</h2>
