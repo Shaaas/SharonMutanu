@@ -559,7 +559,7 @@ function CaseStudyPage({slug,goTo}:{slug:string;goTo:(p:Page,slug?:string)=>void
         </div>
       </section>
       <div style={{borderTop:'1px solid rgba(255,255,255,.06)',display:'grid',gridTemplateColumns:'1fr 1fr'}}>
-        <button onClick={()=>goTo('work-case',prev.slug)} className="case-nav-link" style={{borderRight:'1px solid rgba(255,255,255,.06)',textAlign:'left',background:'none',border:'none',borderRight:'1px solid rgba(255,255,255,.06)',cursor:'pointer',color:'#fff'}}>
+        <button onClick={()=>goTo('work-case',prev.slug)} className="case-nav-link" style={{textAlign:'left',background:'none',border:'none',borderRight:'1px solid rgba(255,255,255,.06)',cursor:'pointer',color:'#fff'}}>
           <div className="label-xs" style={{marginBottom:'.75rem'}}>← PREVIOUS</div>
           <div className="font-bebas" style={{fontSize:'clamp(1.5rem,3vw,2.5rem)',textTransform:'uppercase',lineHeight:1,padding:'3rem 2.5rem'}}>{prev.name}</div>
         </button>
