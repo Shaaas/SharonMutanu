@@ -772,11 +772,10 @@ function BlogPage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
         <div style={{maxWidth:1200,margin:'0 auto'}}>
           {/* Featured */}
           {filter==='All'&&filtered.length>0&&(
-            <div className="reveal" style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'3rem',padding:'3rem',background:'#0a0a0a',border:'1px solid rgba(255,255,255,.06)',borderRadius:'2rem',marginBottom:'2rem',cursor:'pointer',transition:'border-color .3s,transform .3s'}}
+            <div className="two-col reveal" style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'3rem',padding:'3rem',background:'#0a0a0a',border:'1px solid rgba(255,255,255,.06)',borderRadius:'2rem',marginBottom:'2rem',cursor:'pointer',transition:'border-color .3s,transform .3s'}}
               onMouseEnter={e=>{(e.currentTarget as HTMLElement).style.borderColor='rgba(45,91,255,.35)';(e.currentTarget as HTMLElement).style.transform='translateY(-4px)';}}
               onMouseLeave={e=>{(e.currentTarget as HTMLElement).style.borderColor='rgba(255,255,255,.06)';(e.currentTarget as HTMLElement).style.transform='translateY(0)';}}
               onClick={()=>goTo('blog-post',filtered[0].slug)}
-              className="two-col reveal"
             >
               <div style={{background:'#111',borderRadius:'1.25rem',aspectRatio:'16/9',display:'flex',alignItems:'center',justifyContent:'center',position:'relative',overflow:'hidden'}}>
                 <div style={{position:'absolute',inset:0,background:'linear-gradient(135deg,rgba(45,91,255,.12) 0%,transparent 60%)'}}/>
