@@ -300,13 +300,13 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
 <div style={{
   position:'absolute',
   right:'5%',
-  top:'50%',
-  transform:'translateY(-50%)',
+  top:'10%',
+  transform:'translateY(0)',
   width:'45vw',
   maxWidth:600,
   height:'80vh',
   zIndex:0,
-  opacity:0.4,
+  opacity:0.7,
   pointerEvents:'none',
 }}>
   <img 
