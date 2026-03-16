@@ -1192,6 +1192,3 @@ export default function MutanuStudio() {
     </div> 
   );
 }
-    </div>
-  );
-}
