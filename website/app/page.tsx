@@ -722,11 +722,11 @@ function AboutPage({goTo}:{goTo:(p:Page)=>void}) {
     <div>
       <section style={{padding:'10rem 2.5rem 5rem',position:'relative',overflow:'hidden'}}>
         <div className="page-hero-glow"/>
-        <div className="two-col" style={{maxWidth:700,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:'5rem',alignItems:'end'}}>
+        <div className="two-col" style={{maxWidth:1200,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:'5rem',alignItems:'end'}}>
           <div>
             <div className="sect-label anim-fadeIn d1" style={{marginBottom:'1.5rem'}}><span className="dot"/>ABOUT</div>
-            <div className="display-hero anim-fadeUp d2"><ScrambleText text="THE STUDIO" delay={200}/></div>
-            <div className="display-hero text-outline anim-fadeUp d3">& THE PERSON</div>
+            <div className="display-section anim-fadeUp d2"><ScrambleText text="THE STUDIO" delay={200}/></div>
+            <div className="display-section text-outline anim-fadeUp d3">& THE PERSON</div>
           </div>
           <div className="anim-fadeUp d4">
             <p style={{fontSize:'1.05rem',color:'#777',lineHeight:1.9,marginBottom:'1.5rem'}}>Mutanu Studio is a one-person web design and development practice based in Nairobi, Kenya. I work directly with founders, business owners, and marketing teams who need digital infrastructure that actually performs.</p>
