@@ -330,7 +330,7 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
             <div style={{display:'inline-flex',alignItems:'center',gap:'.75rem',background:'rgba(45,91,255,.08)',border:'1px solid rgba(45,91,255,.2)',borderRadius:999,padding:'.5rem 1.25rem'}}>
               <span className="dot"/><span className="font-mono" style={{fontSize:'8px',color:'#2D5BFF',letterSpacing:'.3em',textTransform:'uppercase'}}>ACCEPTING NEW PROJECTS — 2026</span>
             </div>
-          </div><div className="anim-fadeUp d2 display-hero" style={{background:'linear-gradient(90deg, #C9A84C 0%, #F5D78E 50%, #C9A84C 100%)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text'}}>
+          </div><div className="anim-fadeUp d2 display-hero" style={{background:'linear-gradient(90deg, #B8960C 0%, #F5D78E 50%, #B8960C 100%)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text'}}>
   <ScrambleText text="MUTANU" delay={300}/>
 </div>
           <div className="anim-fadeUp d3 display-hero text-outline">STUDIO</div>
