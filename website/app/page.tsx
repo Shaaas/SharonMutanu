@@ -1189,6 +1189,6 @@ export default function MutanuStudio() {
         </svg>
       </a>
 
-    </div> 
+    </div>
   );
 }
