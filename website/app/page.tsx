@@ -722,7 +722,7 @@ function AboutPage({goTo}:{goTo:(p:Page)=>void}) {
     <div>
       <section style={{padding:'10rem 2.5rem 5rem',position:'relative',overflow:'hidden'}}>
         <div className="page-hero-glow"/>
-        <div className="two-col" style={{maxWidth:1200,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:'5rem',alignItems:'end'}}>
+        <div className="two-col" style={{maxWidth:700,margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:'5rem',alignItems:'end'}}>
           <div>
             <div className="sect-label anim-fadeIn d1" style={{marginBottom:'1.5rem'}}><span className="dot"/>ABOUT</div>
             <div className="display-hero anim-fadeUp d2"><ScrambleText text="THE STUDIO" delay={200}/></div>
