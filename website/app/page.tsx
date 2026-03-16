@@ -322,7 +322,7 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
     }}
   />
 </div>       
-        <div className="anim-fadeIn d1 font-mono hide-mobile" style={{position:'absolute',left:'2rem',top:'50%',transform:'rotate(-90deg) translateX(-50%)',transformOrigin:'left center',fontSize:'8px',color:'#1a1a1a',letterSpacing:'.4em',textTransform:'uppercase',whiteSpace:'nowrap'}}>NAIROBI — KE — EST. 2022</div>
+        <div className="anim-fadeIn d1 font-mono hide-mobile" style={{position:'absolute',left:'2rem',top:'50%',transform:'rotate(-90deg) translateX(-50%)',transformOrigin:'left center',fontSize:'8px',color:'#1a1a1a',letterSpacing:'.4em',textTransform:'uppercase',whiteSpace:'nowrap'}}>NAIROBI — KE — EST. 2023</div>
         <div style={{maxWidth:1400,margin:'0 auto',width:'100%'}}>
           {/* Status + availability */}
           <div className="anim-fadeIn d1" style={{display:'flex',flexWrap:'wrap',alignItems:'center',gap:'1rem',marginBottom:'2.5rem'}}>
@@ -476,8 +476,8 @@ function WorkPage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
         <div className="page-hero-glow"/>
         <div style={{maxWidth:1400,margin:'0 auto'}}>
           <div className="sect-label anim-fadeIn d1" style={{marginBottom:'1.5rem'}}><span className="dot"/>PORTFOLIO</div>
-          <div className="display-hero anim-fadeUp d2"><ScrambleText text="SELECTED" delay={200}/></div>
-          <div className="display-hero text-outline anim-fadeUp d3">WORK</div>
+          <div className="display-section anim-fadeUp d2"><ScrambleText text="SELECTED" delay={200}/></div>
+          <div className="display-section text-outline anim-fadeUp d3">WORK</div>
           <p className="anim-fadeUp d4 font-mono" style={{marginTop:'2rem',fontSize:'10px',color:'#555',letterSpacing:'.4em',textTransform:'uppercase',lineHeight:2}}>{PROJECTS.length} projects across web design, development, e-commerce, SaaS, and strategy.</p>
         </div>
       </section>
@@ -818,8 +818,8 @@ function BlogPage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
         <div className="page-hero-glow"/>
         <div style={{maxWidth:1200,margin:'0 auto'}}>
           <div className="sect-label anim-fadeIn d1" style={{marginBottom:'1.5rem'}}><span className="dot"/>INSIGHTS</div>
-          <div className="display-hero anim-fadeUp d2"><ScrambleText text="BLOG" delay={200}/></div>
-          <div className="display-hero text-outline anim-fadeUp d3">& THINKING</div>
+          <div className="display-section anim-fadeUp d2"><ScrambleText text="BLOG" delay={200}/></div>
+          <div className="display-section text-outline anim-fadeUp d3">& THINKING</div>
           <p className="anim-fadeUp d4 font-mono" style={{marginTop:'2rem',fontSize:'10px',color:'#555',letterSpacing:'.4em',textTransform:'uppercase',lineHeight:2}}>Design, development, business strategy.<br/>Things worth writing down.</p>
         </div>
       </section>
