@@ -306,11 +306,11 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
   maxWidth:600,
   height:'80vh',
   zIndex:0,
-  opacity:0.12,
+  opacity:0.17,
   pointerEvents:'none',
 }}>
   <img 
-    src="/Image (38).png" 
+    src="/me.png" 
     alt="" 
     style={{
       width:'100%',
