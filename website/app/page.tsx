@@ -306,7 +306,7 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
   maxWidth:600,
   height:'80vh',
   zIndex:0,
-  opacity:0.7,
+  opacity:1,
   pointerEvents:'none',
 }}>
   <img 
@@ -493,6 +493,31 @@ function WorkPage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
           {filtered.map((p,i)=>(
             <div key={p.slug} className="card reveal" style={{transitionDelay:`${i*.05}s`,padding:'2.5rem',display:'flex',flexDirection:'column',minHeight:360,cursor:'pointer'}} onClick={()=>goTo('work-case',p.slug)}>
               <div style={{height:3,background:`linear-gradient(90deg,${p.color},#2D5BFF)`,borderRadius:'2rem 2rem 0 0',margin:'-2.5rem -2.5rem 2rem'}}/>
+              {/* Live site preview */}
+{p.url && (
+  <div style={{
+    height:200,
+    borderRadius:'1rem',
+    overflow:'hidden',
+    marginBottom:'1.5rem',
+    position:'relative',
+    pointerEvents:'none',
+  }}>
+    <iframe
+      src={p.url}
+      style={{
+        width:'200%',
+        height:'200%',
+        transform:'scale(0.5)',
+        transformOrigin:'top left',
+        border:'none',
+        pointerEvents:'none',
+      }}
+    />
+    {/* Overlay to block interaction */}
+    <div style={{position:'absolute',inset:0}}/>
+  </div>
+)}
               <div style={{display:'flex',justifyContent:'space-between',marginBottom:'1rem'}}>
                 <div className="label-xs" style={{color:'#2D5BFF'}}>{String(i+1).padStart(2,'0')}</div>
                 <div className="label-xs">{p.year}</div>
