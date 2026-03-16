@@ -296,7 +296,32 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
     <div>
       {/* Hero */}
       <section style={{minHeight:'100vh',display:'flex',flexDirection:'column',justifyContent:'center',padding:'8rem 2.5rem 4rem',position:'relative',overflow:'hidden'}}>
-        <div style={{position:'absolute',top:'30%',left:'50%',transform:'translate(-50%,-50%)',width:'70vw',height:'70vw',maxWidth:800,maxHeight:800,background:'radial-gradient(circle,rgba(45,91,255,.07) 0%,transparent 65%)',pointerEvents:'none'}} />
+{/* Floating photo behind text */}
+<div style={{
+  position:'absolute',
+  right:'5%',
+  top:'50%',
+  transform:'translateY(-50%)',
+  width:'45vw',
+  maxWidth:600,
+  height:'80vh',
+  zIndex:0,
+  opacity:0.12,
+  pointerEvents:'none',
+}}>
+  <img 
+    src="/Image (38).png" 
+    alt="" 
+    style={{
+      width:'100%',
+      height:'100%',
+      objectFit:'cover',
+      objectPosition:'center top',
+      maskImage:'linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%)',
+      WebkitMaskImage:'linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%)',
+    }}
+  />
+</div>       
         <div className="anim-fadeIn d1 font-mono hide-mobile" style={{position:'absolute',left:'2rem',top:'50%',transform:'rotate(-90deg) translateX(-50%)',transformOrigin:'left center',fontSize:'8px',color:'#1a1a1a',letterSpacing:'.4em',textTransform:'uppercase',whiteSpace:'nowrap'}}>NAIROBI — KE — EST. 2022</div>
         <div style={{maxWidth:1400,margin:'0 auto',width:'100%'}}>
           {/* Status + availability */}
