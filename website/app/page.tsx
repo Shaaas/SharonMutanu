@@ -328,10 +328,11 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
           <div className="anim-fadeIn d1" style={{display:'flex',flexWrap:'wrap',alignItems:'center',gap:'1rem',marginBottom:'2.5rem'}}>
             <div className="sect-label"><span className="dot"/>OPERATIONAL STATUS: ONLINE</div>
             <div style={{display:'inline-flex',alignItems:'center',gap:'.75rem',background:'rgba(45,91,255,.08)',border:'1px solid rgba(45,91,255,.2)',borderRadius:999,padding:'.5rem 1.25rem'}}>
-              <span className="dot"/><span className="font-mono" style={{fontSize:'8px',color:'#2D5BFF',letterSpacing:'.3em',textTransform:'uppercase'}}>ACCEPTING NEW PROJECTS — 2025</span>
+              <span className="dot"/><span className="font-mono" style={{fontSize:'8px',color:'#2D5BFF',letterSpacing:'.3em',textTransform:'uppercase'}}>ACCEPTING NEW PROJECTS — 2026</span>
             </div>
-          </div>
-          <div className="anim-fadeUp d2 display-hero"><ScrambleText text="MUTANU" delay={300}/></div>
+          </div><div className="anim-fadeUp d2 display-hero" style={{background:'linear-gradient(90deg, #C9A84C 0%, #F5D78E 50%, #C9A84C 100%)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text'}}>
+  <ScrambleText text="MUTANU" delay={300}/>
+</div>
           <div className="anim-fadeUp d3 display-hero text-outline">STUDIO</div>
           <div className="marquee-wrap anim-fadeIn d4" style={{margin:'2rem 0',borderTop:'1px solid rgba(255,255,255,.05)',borderBottom:'1px solid rgba(255,255,255,.05)',padding:'.6rem 0'}} aria-hidden="true">
             <div className="marquee-track font-mono" style={{fontSize:'8px',color:'#2D5BFFc',letterSpacing:'.4em'}}>
@@ -631,8 +632,8 @@ function ServicesPage({goTo}:{goTo:(p:Page)=>void}) {
         <div className="page-hero-glow"/>
         <div style={{maxWidth:1200,margin:'0 auto'}}>
           <div className="sect-label anim-fadeIn d1" style={{marginBottom:'1.5rem'}}><span className="dot"/>WHAT I BUILD</div>
-          <div className="display-hero anim-fadeUp d2"><ScrambleText text="SERVICES" delay={200}/></div>
-          <div className="display-hero text-outline anim-fadeUp d3">& SOLUTIONS</div>
+          <div className="display-section anim-fadeUp d2"><ScrambleText text="SERVICES" delay={200}/></div>
+          <div className="display-section text-outline anim-fadeUp d3">& SOLUTIONS</div>
         </div>
       </section>
       <section className="page-section section-divider">
