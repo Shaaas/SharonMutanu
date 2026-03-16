@@ -306,7 +306,7 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
   maxWidth:600,
   height:'80vh',
   zIndex:0,
-  opacity:0.17,
+  opacity:0.4,
   pointerEvents:'none',
 }}>
   <img 
