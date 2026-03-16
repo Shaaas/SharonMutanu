@@ -739,8 +739,18 @@ function AboutPage({goTo}:{goTo:(p:Page)=>void}) {
         <div className="two-col" style={{maxWidth:1200,margin:'0 auto',display:'grid',gridTemplateColumns:'400px 1fr',gap:'5rem',alignItems:'start'}}>
           <div className="reveal-left" style={{background:'#0d0d0d',border:'1px solid rgba(255,255,255,.07)',borderRadius:'2rem',aspectRatio:'3/4',display:'flex',alignItems:'center',justifyContent:'center',position:'relative',overflow:'hidden',flexShrink:0}}>
             <div style={{position:'absolute',inset:0,background:'linear-gradient(135deg,rgba(45,91,255,.1) 0%,transparent 60%)'}}/>
-            <div style={{textAlign:'center',position:'relative'}}><div style={{width:80,height:80,border:'2px solid rgba(45,91,255,.3)',borderRadius:'50%',display:'flex',alignItems:'center',justifyContent:'center',margin:'0 auto 1rem',fontSize:'2rem'}}>👤</div><div className="font-mono" style={{fontSize:'8px',color:'#2a2a2a',letterSpacing:'.3em',textTransform:'uppercase'}}>PHOTO HERE</div></div>
-          </div>
+<div className="reveal-left" style={{background:'#0d0d0d',border:'1px solid rgba(255,255,255,.07)',borderRadius:'2rem',aspectRatio:'3/4',display:'flex',alignItems:'center',justifyContent:'center',position:'relative',overflow:'hidden',flexShrink:0}}>
+  <img 
+    src="/me.png" 
+    alt="Sharon Mutanu" 
+    style={{
+      width:'100%',
+      height:'100%',
+      objectFit:'cover',
+      objectPosition:'center top',
+    }}
+  />
+</div>          </div>
           <div className="reveal-right">
             <div className="sect-label" style={{marginBottom:'1.5rem'}}><span className="dot"/>THE PERSON BEHIND THE WORK</div>
             <h2 className="font-bebas" style={{fontSize:'clamp(2.5rem,5vw,4rem)',textTransform:'uppercase',marginBottom:'2rem',lineHeight:.9}}>Building the web<br/><span style={{color:'#2D5BFF'}}>from Nairobi.</span></h2>
