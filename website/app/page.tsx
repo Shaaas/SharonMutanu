@@ -1162,7 +1162,7 @@ export default function MutanuStudio() {
 
       {/* WhatsApp floating button */}
       
-        href="https://wa.me/254115013612"
+        <a href="https://wa.me/254115013612"
         target="_blank"
         rel="noopener noreferrer"
         style={{
