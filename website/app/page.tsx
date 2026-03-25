@@ -310,7 +310,7 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
   pointerEvents:'none',
 }}>
   <img 
-    src="/me.png" 
+    src="/hero.png" 
     alt="" 
     style={{
       width:'100%',
