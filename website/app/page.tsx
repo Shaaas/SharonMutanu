@@ -34,10 +34,62 @@ const TECH_STACK = [
 ];
 
 const PRICING = [
-  { title:'Starter', price:'$350', period:'', desc:'For solo founders getting their first professional site.', features:['3 page website','Mobile responsive','Contact form','Basic SEO setup','2 revision rounds'], highlight:false },
-  { title:'Business', price:'$750', period:'', desc:'For growing businesses that need a full web presence with polish.', features:['5–7 pages','Custom animations','SEO foundation','CMS integration','3 revision rounds'], highlight:false },
-  { title:'Custom', price:'$1200', period:'+', desc:'Full-scale digital experiences — apps, e-commerce, SaaS products.', features:['Unlimited pages','Advanced features','Full design freedom','Priority build','Unlimited revisions'], highlight:true },
-  { title:'Retainer', price:'$120', period:'/mo', desc:'Ongoing partnership keeping your site fast, updated, and secure.', features:['Monthly maintenance','Content updates','Priority support','Monthly report','Direct Slack access'], highlight:false },
+{
+  title:'Starter',
+  price:'KSh 12,000',
+  period:'',
+  desc:'For solo founders getting their first clean professional site.',
+  features:[
+    'Up to 3 pages',
+    'Mobile responsive',
+    'Contact section',
+    'Basic SEO setup',
+    '1 revision round'
+  ],
+  highlight:false
+},
+{
+  title:'Business',
+  price:'KSh 28,000',
+  period:'',
+  desc:'For growing businesses that need a polished full web presence.',
+  features:[
+    'Up to 6 pages',
+    'Custom styling',
+    'Basic animations',
+    'SEO foundation',
+    '2 revision rounds'
+  ],
+  highlight:true
+},
+{
+  title:'Custom',
+  price:'KSh 55,000',
+  period:'+',
+  desc:'Full builds for e commerce, apps, or complex business websites.',
+  features:[
+    'Custom page count',
+    'Advanced features',
+    'Custom UI design',
+    'Performance optimization',
+    '3 revision rounds'
+  ],
+  highlight:false
+},
+{
+  title:'Retainer',
+  price:'KSh 6,000',
+  period:'/mo',
+  desc:'Ongoing support to keep your website updated and running smoothly.',
+  features:[
+    'Monthly maintenance',
+    'Content updates',
+    'Bug fixes',
+    'Priority support',
+    'Monthly check in'
+  ],
+  highlight:false
+},
 ];
 
 const FAQS = [
