@@ -807,9 +807,17 @@ function AboutPage({goTo}:{goTo:(p:Page)=>void}) {
           <div className="reveal-right">
             <div className="sect-label" style={{marginBottom:'1.5rem'}}><span className="dot"/>THE PERSON BEHIND THE WORK</div>
             <h2 className="font-bebas" style={{fontSize:'clamp(2.5rem,5vw,4rem)',textTransform:'uppercase',marginBottom:'2rem',lineHeight:.9}}>Building the web<br/><span style={{color:'#2D5BFF'}}>from Nairobi.</span></h2>
-            <p style={{color:'#777',fontSize:'.9rem',lineHeight:1.9,marginBottom:'1.25rem'}}>I am a self-taught web designer and developer. I started building websites because most of the ones I saw, especially for businesses I respected, were genuinely bad. Slow, generic, forgettable.</p>
-            <p style={{color:'#777',fontSize:'.9rem',lineHeight:1.9,marginBottom:'1.25rem'}}>I became obsessed with understanding why, and with figuring out how to do it better. Every project gets the same focus I gave my first one: an unreasonable amount of care about the details.</p>
-            <p style={{color:'#555',fontSize:'.9rem',lineHeight:1.9,marginBottom:'2.5rem'}}>Outside of work: design systems, business strategy, and the intersection between the two. I read a lot, run occasionally, and drink too much coffee.</p>
+          <p style={{color:'#777',fontSize:'.9rem',lineHeight:1.9,marginBottom:'1.25rem'}}>
+I build websites from Nairobi with a simple goal. Make them feel as good as the businesses behind them. Too many sites look like afterthoughts. Slow, generic, and hard to trust.
+</p>
+
+<p style={{color:'#777',fontSize:'.9rem',lineHeight:1.9,marginBottom:'1.25rem'}}>
+I care about clarity, speed, and restraint. No unnecessary noise. No bloated layouts. Every element should earn its place. The result is work that feels modern, calm, and built to last.
+</p>
+
+<p style={{color:'#555',fontSize:'.9rem',lineHeight:1.9,marginBottom:'2.5rem'}}>
+When I’m not building client projects, I’m studying design systems, refining ideas, and reworking details most people would never notice. It’s a bit obsessive. It works.
+</p>
             <div style={{display:'flex',gap:'1rem',flexWrap:'wrap'}}>
               <button className="btn btn-primary" onClick={()=>goTo('contact')}><span className="btn-inner">WORK WITH ME</span></button>
               <button className="btn" onClick={()=>goTo('work')}><span className="btn-inner">SEE MY WORK</span></button>
