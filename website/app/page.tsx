@@ -134,7 +134,7 @@ const TIMELINE = [
   { year:'2019', title:'First Lines of Code', body:'Started learning web development out of frustration with how bad most websites looked. Built my first site for a local restaurant — for free, just for the experience.' },
   { year:'2020', title:'First Paid Project', body:'Landed a $150 freelance job. Spent 3× the estimated time on it. Learned more in those weeks than in months of tutorials.' },
   { year:'2021', title:'Going Deeper', body:'Committed fully to the craft. Studied design systems, performance engineering, and conversion optimisation. Built obsessively.' },
-  { year:'2022', title:'Mutanu Studio Founded', body:'Formalised the practice. Started taking on clients with intention — fewer projects, done properly. Quality over quantity.' },
+  { year:'2022', title:'MYSA Founded', body:'Formalised the practice. Started taking on clients with intention — fewer projects, done properly. Quality over quantity.' },
   { year:'2023', title:'Building Reputation', body:'First international clients. First SaaS project. First featured mention. The work started speaking for itself.' },
   { year:'2024', title:'Now', body:'Working with ambitious businesses across Kenya and globally. Still obsessed with the craft. Still building things that matter.' },
 ];
@@ -383,7 +383,7 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
               <span className="dot"/><span className="font-mono" style={{fontSize:'8px',color:'#2D5BFF',letterSpacing:'.3em',textTransform:'uppercase'}}>ACCEPTING NEW PROJECTS — 2026</span>
             </div>
           </div><div className="anim-fadeUp d2 display-hero" style={{background:'linear-gradient(90deg, #B8960C 0%, #F5D78E 50%, #B8960C 100%)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent', backgroundClip:'text'}}>
-  <ScrambleText text="MUTANU" delay={300}/>
+  <ScrambleText text="MYSA" delay={300}/>
 </div>
           <div className="anim-fadeUp d3 display-hero text-outline">STUDIO</div>
           <div className="marquee-wrap anim-fadeIn d4" style={{margin:'2rem 0',borderTop:'1px solid rgba(255,255,255,.05)',borderBottom:'1px solid rgba(255,255,255,.05)',padding:'.6rem 0'}} aria-hidden="true">
@@ -464,7 +464,7 @@ function HomePage({goTo}:{goTo:(p:Page,slug?:string)=>void}) {
       <section className="page-section">
         <div style={{maxWidth:1200,margin:'0 auto'}}>
           <div style={{textAlign:'center',marginBottom:'4rem'}}>
-            <div className="sect-label reveal" style={{marginBottom:'1rem',justifyContent:'center'}}><span className="dot"/>WHY MUTANU STUDIO</div>
+            <div className="sect-label reveal" style={{marginBottom:'1rem',justifyContent:'center'}}><span className="dot"/>WHY MYSA</div>
             <h2 className="display-section reveal"><ScrambleText text="BUILT DIFFERENT."/></h2>
             <h2 className="display-section reveal text-outline-accent" style={{fontSize:'clamp(2rem,5vw,4.5rem)'}}>DELIVERED DIFFERENT.</h2>
           </div>
@@ -782,7 +782,7 @@ function AboutPage({goTo}:{goTo:(p:Page)=>void}) {
             <div className="display-section text-outline anim-fadeUp d3">& THE PERSON</div>
           </div>
           <div className="anim-fadeUp d4">
-            <p style={{fontSize:'1.05rem',color:'#777',lineHeight:1.9,marginBottom:'1.5rem'}}>Mutanu Studio is a one-person web design and development practice based in Nairobi, Kenya. I work directly with founders, business owners, and marketing teams who need digital infrastructure that actually performs.</p>
+            <p style={{fontSize:'1.05rem',color:'#777',lineHeight:1.9,marginBottom:'1.5rem'}}>MYSA is a one-person web design and development practice based in Nairobi, Kenya. I work directly with founders, business owners, and marketing teams who need digital infrastructure that actually performs.</p>
             <p style={{fontSize:'1.05rem',color:'#555',lineHeight:1.9}}>Not an agency. Not a freelancer-with-templates. The quality control and intentionality of a boutique studio, with the speed and directness of working with one person.</p>
           </div>
         </div>
@@ -964,7 +964,7 @@ function BlogPostPage({slug,goTo}:{slug:string;goTo:(p:Page,s?:string)=>void}) {
           <div className="two-col" style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'2rem',alignItems:'center'}}>
             <div>
               <div className="font-mono" style={{fontSize:'8px',color:'#2D5BFF',letterSpacing:'.3em',marginBottom:'.5rem'}}>WRITTEN BY</div>
-              <div className="font-bebas" style={{fontSize:'1.5rem',textTransform:'uppercase'}}>Mutanu Studio</div>
+              <div className="font-bebas" style={{fontSize:'1.5rem',textTransform:'uppercase'}}>MYSA</div>
               <div className="font-mono" style={{fontSize:'8px',color:'#444',letterSpacing:'.2em',marginTop:'.25rem'}}>NAIROBI, KENYA</div>
             </div>
             <div style={{textAlign:'right'}}><button className="btn btn-primary" onClick={()=>goTo('contact')}><span className="btn-inner">START A PROJECT</span></button></div>
@@ -1084,7 +1084,7 @@ function Footer({goTo}:{goTo:(p:Page)=>void}) {
           <div>
             <button onClick={()=>goTo('home')} style={{background:'none',border:'none',cursor:'pointer',display:'flex',alignItems:'center',gap:'.75rem',marginBottom:'1.5rem'}}>
               <div style={{width:28,height:28,border:'1.5px solid #2D5BFF',borderRadius:6,display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{width:10,height:10,background:'#2D5BFF',borderRadius:2}}/></div>
-              <span className="font-mono" style={{fontSize:'11px',fontWeight:700,letterSpacing:'.45em',color:'#fff',textTransform:'uppercase'}}>MUTANU // STUDIO</span>
+              <span className="font-mono" style={{fontSize:'11px',fontWeight:700,letterSpacing:'.45em',color:'#fff',textTransform:'uppercase'}}>MYSA</span>
             </button>
             <p style={{color:'#444',fontSize:'.82rem',lineHeight:1.8,maxWidth:280}}>Architecting high-fidelity digital infrastructure for ambitious businesses. Based in Nairobi, working globally.</p>
             <button onClick={()=>goTo('contact')} className="font-mono" style={{background:'none',border:'none',cursor:'pointer',marginTop:'1.5rem',fontSize:'9px',color:'#2D5BFF',letterSpacing:'.3em',textTransform:'uppercase',borderBottom:'1px solid rgba(45,91,255,.35)',paddingBottom:2}}>START A PROJECT →</button>
@@ -1111,7 +1111,7 @@ function Footer({goTo}:{goTo:(p:Page)=>void}) {
           </div>
         </div>
         <div style={{borderTop:'1px solid rgba(255,255,255,.05)',paddingTop:'1.5rem',display:'flex',justifyContent:'space-between',alignItems:'center',flexWrap:'wrap',gap:'1rem'}}>
-          <span className="font-mono" style={{fontSize:'8px',color:'#1e1e1e',letterSpacing:'.3em',textTransform:'uppercase'}}>© 2025 MUTANU STUDIO</span>
+          <span className="font-mono" style={{fontSize:'8px',color:'#1e1e1e',letterSpacing:'.3em',textTransform:'uppercase'}}>© 2025 MYSA</span>
           <span className="font-mono" style={{fontSize:'8px',color:'#1e1e1e',letterSpacing:'.3em',textTransform:'uppercase'}}>NAIROBI, KENYA</span>
         </div>
       </div>
@@ -1177,7 +1177,7 @@ export default function MutanuStudio() {
       }}>
         {/* Logo */}
 <button onClick={()=>goTo('home')} style={{background:'none',border:'none',cursor:'pointer',display:'flex',alignItems:'center',gap:'.75rem'}} aria-label="Home">
-  <img src="/logo2.png" alt="Mutanu Studio" style={{height:100,width:400,objectFit:'contain',transform: 'scale(2.5)'}} />
+  <img src="/logo2.png" alt="MYSA" style={{height:100,width:400,objectFit:'contain',transform: 'scale(2.5)'}} />
 </button>
 
         {/* Desktop links */}
