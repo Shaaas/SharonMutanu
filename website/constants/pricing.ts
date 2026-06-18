@@ -3,7 +3,7 @@ import { PricingPlan } from '@/types';
 export const PRICING: PricingPlan[] = [
   {
     title: 'Starter',
-    price: 'KSh 12,000',
+    price: 'KSh 15,000',
     period: '',
     desc: 'For solo founders getting their first clean professional site.',
     features: ['Up to 3 pages', 'Mobile responsive', 'Contact section', 'Basic SEO setup', '1 revision round'],
@@ -11,7 +11,7 @@ export const PRICING: PricingPlan[] = [
   },
   {
     title: 'Business',
-    price: 'KSh 28,000',
+    price: 'KSh 45,000',
     period: '',
     desc: 'For growing businesses that need a polished full web presence.',
     features: ['Up to 6 pages', 'Custom styling', 'Basic animations', 'SEO foundation', '2 revision rounds'],
@@ -19,7 +19,7 @@ export const PRICING: PricingPlan[] = [
   },
   {
     title: 'Custom',
-    price: 'KSh 55,000',
+    price: 'KSh 55,000-Ksh 80,000',
     period: '+',
     desc: 'Full builds for e commerce, apps, or complex business websites.',
     features: ['Custom page count', 'Advanced features', 'Custom UI design', 'Performance optimization', '3 revision rounds'],
@@ -27,7 +27,7 @@ export const PRICING: PricingPlan[] = [
   },
   {
     title: 'Retainer',
-    price: 'KSh 6,000',
+    price: 'KSh 10,000',
     period: '/mo',
     desc: 'Ongoing support to keep your website updated and running smoothly.',
     features: ['Monthly maintenance', 'Content updates', 'Bug fixes', 'Priority support', 'Monthly check in'],

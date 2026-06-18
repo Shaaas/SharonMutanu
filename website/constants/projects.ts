@@ -2,6 +2,22 @@ import { Project } from '@/types';
 
 export const PROJECTS: Project[] = [
   {
+  slug: 'ubta',
+  name: 'United Boda Transport Association',
+  url: 'https://www.ubta.co.ke/',
+  tagline: 'A digital home for Nairobi\'s largest boda boda association.',
+  tags: ['TRANSPORT', 'WEBSITE',],
+  desc: 'A marketing and information website for the United Boda Transport Association, representing boda boda riders across Nairobi.',
+  challenge: 'UBTA needed a credible online presence to legitimise the association, attract partners, and serve as a communication hub for its members.',
+  solution: 'A clean, fast marketing website built with Next.js and Tailwind CSS, conveying trust and professionalism to both riders and institutional stakeholders.',
+  results: ['Established a credible online presence for the association', 'Supports outreach to partners and microfinance institutions', 'Serves as the public face for 3,500+ registered riders'],
+  tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+  year: '2025',
+  category: 'Website',
+  color: '#1a3a5c',
+  hasDoc: false,
+},
+  {
     slug: 'soma-health',
     name: 'Soma Health',
     url: 'https://somahealthapp.netlify.app/',
