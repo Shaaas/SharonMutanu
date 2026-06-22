@@ -522,3 +522,24 @@ select.input option { background:#111; color:#fff; }
   *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
   .reveal,.reveal-left,.reveal-right,.reveal-scale { opacity:1; transform:none; transition:none; }
 }
+/* ─── Show only on mobile (hamburger, etc.) ──────────────────────── */
+.show-mobile { display: none !important; }
+
+@media (max-width: 640px) {
+  .show-mobile { display: flex !important; }
+}
+
+/* ─── Nav link default color fix ────────────────────────────────── */
+.nav-link { color: rgba(255,255,255,.55); }
+.nav-link:hover,
+.nav-link.active { color: #ffffff !important; }
+/* ─── Show only on mobile ────────────────────────────────────────── */
+.show-mobile { display: none !important; }
+@media (max-width: 640px) {
+  .show-mobile { display: flex !important; }
+}
+
+/* ─── Nav link default color ─────────────────────────────────────── */
+.nav-link { color: rgba(255,255,255,.55); }
+.nav-link:hover,
+.nav-link.active { color: #ffffff !important; }

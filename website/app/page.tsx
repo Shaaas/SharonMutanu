@@ -683,30 +683,30 @@ export default function MysaStudio() {
         }}
       >
         <button onClick={() => goTo('home')} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '.75rem' }} aria-label="Home">
-          <img src="/logo2.png" alt="MYSA" style={{ height: 100, width: 400, objectFit: 'contain', transform: 'scale(2.5)' }} />
-        </button>
+<img src="/logo2.png" alt="MYSA" style={{ height: 36, width: 'auto', objectFit: 'contain' }} />        </button>
 
-        <ul className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '2.5rem', listStyle: 'none', margin: 0, padding: 0 }}>
-          {NAV_ITEMS.filter((n) => n.page !== 'home').map(({ label, page: p }) => (
-            <li key={p}>
-              <button className={`nav-link${isActive(p as Page) ? ' active' : ''}`} onClick={() => goTo(p as Page)} style={{ color: isActive(p as Page) ? '#fff' : '#2D5BFF' }}>
-                {label}
-              </button>
-            </li>
-          ))}
-        </ul>
+       <ul className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '2.5rem', listStyle: 'none', margin: 0, padding: 0 }}>
+  {NAV_ITEMS.map(({ label, page: p }) => (
+    <li key={p}>
+      <button className={`nav-link${isActive(p as Page) ? ' active' : ''}`} onClick={() => goTo(p as Page)}>
+        {label}
+      </button>
+    </li>
+  ))}
+</ul>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           <div className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '.5rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#222', letterSpacing: '.2em' }}>
             <span className="dot" />ONLINE
           </div>
           <button className="btn btn-primary btn-sm hide-mobile" onClick={() => goTo('contact')}><span className="btn-inner">Start a Project</span></button>
-          <button
-            onClick={() => setMenuOpen((o) => !o)}
-            style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '5px', padding: '4px', zIndex: 70, position: 'relative' }}
-            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={menuOpen}
-          >
+         <button
+  className="show-mobile"
+  onClick={() => setMenuOpen((o) => !o)}
+  style={{ background: 'none', border: 'none', cursor: 'pointer', flexDirection: 'column', gap: '5px', padding: '4px', zIndex: 70, position: 'relative' }}
+  aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+  aria-expanded={menuOpen}
+>
             <span style={{ display: 'block', width: 22, height: 1.5, background: menuOpen ? '#2D5BFF' : '#fff', transition: 'transform .3s,opacity .3s', transform: menuOpen ? 'rotate(45deg) translate(5px,5px)' : 'none' }} />
             <span style={{ display: 'block', width: 22, height: 1.5, background: menuOpen ? '#2D5BFF' : '#fff', transition: 'opacity .3s', opacity: menuOpen ? 0 : 1 }} />
             <span style={{ display: 'block', width: 22, height: 1.5, background: menuOpen ? '#2D5BFF' : '#fff', transition: 'transform .3s,opacity .3s', transform: menuOpen ? 'rotate(-45deg) translate(5px,-5px)' : 'none' }} />
