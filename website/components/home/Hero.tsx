@@ -42,13 +42,13 @@ export function Hero({ goTo }: Props) {
             <line key={`v${i}`} x1={i * 45} y1="0" x2={i * 45} y2="800" stroke="#2D5BFF" strokeWidth="1" />
           ))}
           {Array.from({ length: 18 }).map((_, i) => (
-            <line key={`h${i}`} x1="0" y1={i * 45} x2="500" y2={i * 45} stroke="#2D5BFF" strokeWidth="0.5" />
+            <line key={`h${i}`} x1="0" y1={i * 45} x2="500" y2={i * 45} stroke="#2D5BFF" strokeWidth="1" />
           ))}
           <circle cx="360" cy="200" r="120" stroke="#2D5BFF" strokeWidth="0.5" fill="none" />
           <circle cx="360" cy="200" r="80" stroke="#2D5BFF" strokeWidth="0.5" fill="none" />
           <circle cx="360" cy="200" r="40" stroke="#2D5BFF" strokeWidth="0.5" fill="none" />
-          <line x1="240" y1="200" x2="480" y2="200" stroke="#2D5BFF" strokeWidth="0.5" />
-          <line x1="360" y1="80" x2="360" y2="320" stroke="#2D5BFF" strokeWidth="0.5" />
+          <line x1="240" y1="200" x2="480" y2="200" stroke="#2D5BFF" strokeWidth="1" />
+          <line x1="360" y1="80" x2="360" y2="320" stroke="#2D5BFF" strokeWidth="1" />
         </svg>
         {/* Corner accent */}
         <div style={{
