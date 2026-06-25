@@ -673,7 +673,7 @@ export default function MysaStudio() {
         className="nav-bar"
         aria-label="Main navigation"
         style={{
-          position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 50,
+          position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 50, overflow: 'visible',
           background: scrolled ? 'rgba(5,5,5,.92)' : 'transparent',
           backdropFilter: scrolled ? 'blur(16px)' : 'none',
           borderBottom: scrolled ? '1px solid rgba(255,255,255,.06)' : '0.3px solid transparent',
@@ -703,7 +703,7 @@ export default function MysaStudio() {
          <button
   className="show-mobile"
   onClick={() => setMenuOpen((o) => !o)}
-  style={{ background: 'none', border: 'none', cursor: 'pointer', flexDirection: 'column', gap: '5px', padding: '4px', zIndex: 70, position: 'relative' }}
+  style={{ background: 'none', border: 'none', cursor: 'pointer', flexDirection: 'column', gap: '6px', padding: '10px', zIndex: 70, position: 'relative', minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' }}
   aria-label={menuOpen ? 'Close menu' : 'Open menu'}
   aria-expanded={menuOpen}
 >
