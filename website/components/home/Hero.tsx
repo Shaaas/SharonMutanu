@@ -14,7 +14,7 @@ export function Hero({ goTo }: Props) {
     <section
       style={{
         minHeight: '100vh', display: 'flex', flexDirection: 'column',
-        justifyContent: 'center', padding: '8rem 2.5rem 4rem',
+        justifyContent: 'center', padding: 'clamp(5rem, 12vw, 8rem) 1.5rem 3rem',
         position: 'relative', overflow: 'hidden',
       }}
     >

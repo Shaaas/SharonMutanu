@@ -677,13 +677,13 @@ export default function MysaStudio() {
           background: scrolled ? 'rgba(5,5,5,.92)' : 'transparent',
           backdropFilter: scrolled ? 'blur(16px)' : 'none',
           borderBottom: scrolled ? '1px solid rgba(255,255,255,.06)' : '0.3px solid transparent',
-          padding: '1.25rem 2.5rem',
+          padding: '1rem clamp(1rem, 4vw, 2.5rem)',
           display: 'flex', justifyContent: 'space-between', alignItems: 'center',
           transition: 'background .4s,border-color .4s',
         }}
       >
         <button onClick={() => goTo('home')} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '.75rem' }} aria-label="Home">
-<img src="/logo2.png" alt="MYSA" style={{ height: 52, width: 52, objectFit: 'contain' }} />        </button>
+<img src="/logo2.png" alt="MYSA" style={{ height: 44, width: 44, objectFit: 'contain' }} />        </button>
 
        <ul className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '2.5rem', listStyle: 'none', margin: 0, padding: 0 }}>
   {NAV_ITEMS.map(({ label, page: p }) => (

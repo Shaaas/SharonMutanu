@@ -528,8 +528,23 @@ select.input option { background:#111; color:#fff; }
 @media (max-width: 640px) {
   .show-mobile { display: flex !important; }
   .page-section { padding: 3rem 1.25rem; }
-  .display-hero { font-size: clamp(3.5rem, 18vw, 6rem); }
+  .display-hero { font-size: clamp(3rem, 22vw, 5rem); }
   .display-section { font-size: clamp(2rem, 10vw, 3.5rem); }
+
+  /* Push WhatsApp button higher on mobile */
+  a[href*="wa.me"] {
+    bottom: 5rem !important;
+    right: 1rem !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  /* Reduce hero status bar font */
+  .sect-label { font-size: 7px; letter-spacing: .3em; }
+
+  /* Fix marquee padding */
+  .marquee-wrap { margin: 1rem 0 !important; }
+
 }
 
 /* ─── Nav link default color fix ────────────────────────────────── */
@@ -541,8 +556,23 @@ select.input option { background:#111; color:#fff; }
 @media (max-width: 640px) {
   .show-mobile { display: flex !important; }
   .page-section { padding: 3rem 1.25rem; }
-  .display-hero { font-size: clamp(3.5rem, 18vw, 6rem); }
+  .display-hero { font-size: clamp(3rem, 22vw, 5rem); }
   .display-section { font-size: clamp(2rem, 10vw, 3.5rem); }
+
+  /* Push WhatsApp button higher on mobile */
+  a[href*="wa.me"] {
+    bottom: 5rem !important;
+    right: 1rem !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  /* Reduce hero status bar font */
+  .sect-label { font-size: 7px; letter-spacing: .3em; }
+
+  /* Fix marquee padding */
+  .marquee-wrap { margin: 1rem 0 !important; }
+
 }
 
 /* ─── Nav link default color ─────────────────────────────────────── */
