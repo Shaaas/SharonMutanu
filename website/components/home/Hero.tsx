@@ -18,24 +18,51 @@ export function Hero({ goTo }: Props) {
         position: 'relative', overflow: 'hidden',
       }}
     >
-      {/* Floating hero photo */}
-      <div
-        style={{
-          position: 'absolute', right: '5%', top: '10%',
-          width: '45vw', maxWidth: 600, height: '80vh',
-          zIndex: 0, opacity: 1, pointerEvents: 'none',
-        }}
-      >
-        <img
-          src="/hero.png"
-          alt=""
-          style={{
-            width: '100%', height: '100%',
-            objectFit: 'cover', objectPosition: 'center top',
-            maskImage: 'linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%)',
-            WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%)',
-          }}
-        />
+      {/* Animated background elements */}
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none', overflow: 'hidden' }}>
+        {/* Large glowing orb */}
+        <div style={{
+          position: 'absolute', right: '-10%', top: '-20%',
+          width: '70vw', height: '70vw', maxWidth: 900, maxHeight: 900,
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(45,91,255,0.12) 0%, rgba(45,91,255,0.04) 40%, transparent 70%)',
+          filter: 'blur(60px)',
+        }} />
+        {/* Secondary orb */}
+        <div style={{
+          position: 'absolute', right: '15%', top: '30%',
+          width: '30vw', height: '30vw', maxWidth: 400, maxHeight: 400,
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(45,91,255,0.08) 0%, transparent 70%)',
+          filter: 'blur(40px)',
+        }} />
+        {/* Geometric grid lines */}
+        <svg style={{ position: 'absolute', right: 0, top: 0, width: '55%', height: '100%', opacity: 0.04 }} viewBox="0 0 500 800" xmlns="http://www.w3.org/2000/svg">
+          {Array.from({ length: 12 }).map((_, i) => (
+            <line key={`v${i}`} x1={i * 45} y1="0" x2={i * 45} y2="800" stroke="#2D5BFF" strokeWidth="0.5" />
+          ))}
+          {Array.from({ length: 18 }).map((_, i) => (
+            <line key={`h${i}`} x1="0" y1={i * 45} x2="500" y2={i * 45} stroke="#2D5BFF" strokeWidth="0.5" />
+          ))}
+          <circle cx="360" cy="200" r="120" stroke="#2D5BFF" strokeWidth="0.5" fill="none" />
+          <circle cx="360" cy="200" r="80" stroke="#2D5BFF" strokeWidth="0.5" fill="none" />
+          <circle cx="360" cy="200" r="40" stroke="#2D5BFF" strokeWidth="0.5" fill="none" />
+          <line x1="240" y1="200" x2="480" y2="200" stroke="#2D5BFF" strokeWidth="0.5" />
+          <line x1="360" y1="80" x2="360" y2="320" stroke="#2D5BFF" strokeWidth="0.5" />
+        </svg>
+        {/* Corner accent */}
+        <div style={{
+          position: 'absolute', right: '5%', bottom: '10%',
+          width: 200, height: 200,
+          border: '1px solid rgba(45,91,255,0.12)',
+          borderRadius: '50%',
+        }} />
+        <div style={{
+          position: 'absolute', right: '7%', bottom: '12%',
+          width: 140, height: 140,
+          border: '1px solid rgba(45,91,255,0.08)',
+          borderRadius: '50%',
+        }} />
       </div>
 
       <div
