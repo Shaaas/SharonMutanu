@@ -683,7 +683,7 @@ export default function MysaStudio() {
         }}
       >
         <button onClick={() => goTo('home')} style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '.75rem' }} aria-label="Home">
-<img src="/logo2.png" alt="MYSA" style={{ height: 36, width: 'auto', objectFit: 'contain' }} />        </button>
+<img src="/logo2.png" alt="MYSA" style={{ height: 52, width: 52, objectFit: 'contain' }} />        </button>
 
        <ul className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '2.5rem', listStyle: 'none', margin: 0, padding: 0 }}>
   {NAV_ITEMS.map(({ label, page: p }) => (

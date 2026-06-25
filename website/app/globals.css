@@ -481,7 +481,7 @@ select.input option { background:#111; color:#fff; }
 .mobile-nav-btn:hover { color:var(--accent); }
 
 /* ─── Page sections ──────────────────────────────────────────────── */
-.page-section { padding:6rem 2.5rem; }
+.page-section { padding:4rem 2.5rem; }
 .page-section-dark { background:#080808; border-top:1px solid rgba(255,255,255,.04); border-bottom:1px solid rgba(255,255,255,.04); }
 .section-divider { border-top:1px solid rgba(255,255,255,.05); }
 .page-hero-glow { position:absolute; top:0; left:0; right:0; height:400px; background:radial-gradient(ellipse at 50% -20%,rgba(45,91,255,.12) 0%,transparent 65%); pointer-events:none; }
@@ -527,6 +527,9 @@ select.input option { background:#111; color:#fff; }
 
 @media (max-width: 640px) {
   .show-mobile { display: flex !important; }
+  .page-section { padding: 3rem 1.25rem; }
+  .display-hero { font-size: clamp(3.5rem, 18vw, 6rem); }
+  .display-section { font-size: clamp(2rem, 10vw, 3.5rem); }
 }
 
 /* ─── Nav link default color fix ────────────────────────────────── */
@@ -537,6 +540,9 @@ select.input option { background:#111; color:#fff; }
 .show-mobile { display: none !important; }
 @media (max-width: 640px) {
   .show-mobile { display: flex !important; }
+  .page-section { padding: 3rem 1.25rem; }
+  .display-hero { font-size: clamp(3.5rem, 18vw, 6rem); }
+  .display-section { font-size: clamp(2rem, 10vw, 3.5rem); }
 }
 
 /* ─── Nav link default color ─────────────────────────────────────── */
