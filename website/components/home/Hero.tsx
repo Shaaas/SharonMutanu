@@ -25,7 +25,7 @@ export function Hero({ goTo }: Props) {
           position: 'absolute', right: '-10%', top: '-20%',
           width: '70vw', height: '70vw', maxWidth: 900, maxHeight: 900,
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(45,91,255,0.12) 0%, rgba(45,91,255,0.04) 40%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(45,91,255,0.25) 0%, rgba(45,91,255,0.08) 40%, transparent 70%)',
           filter: 'blur(60px)',
         }} />
         {/* Secondary orb */}
@@ -33,13 +33,13 @@ export function Hero({ goTo }: Props) {
           position: 'absolute', right: '15%', top: '30%',
           width: '30vw', height: '30vw', maxWidth: 400, maxHeight: 400,
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(45,91,255,0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(45,91,255,0.15) 0%, transparent 70%)',
           filter: 'blur(40px)',
         }} />
         {/* Geometric grid lines */}
         <svg style={{ position: 'absolute', right: 0, top: 0, width: '55%', height: '100%', opacity: 0.04 }} viewBox="0 0 500 800" xmlns="http://www.w3.org/2000/svg">
           {Array.from({ length: 12 }).map((_, i) => (
-            <line key={`v${i}`} x1={i * 45} y1="0" x2={i * 45} y2="800" stroke="#2D5BFF" strokeWidth="0.5" />
+            <line key={`v${i}`} x1={i * 45} y1="0" x2={i * 45} y2="800" stroke="#2D5BFF" strokeWidth="1" />
           ))}
           {Array.from({ length: 18 }).map((_, i) => (
             <line key={`h${i}`} x1="0" y1={i * 45} x2="500" y2={i * 45} stroke="#2D5BFF" strokeWidth="0.5" />

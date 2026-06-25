@@ -120,7 +120,7 @@ function WorkPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
               </div>
               <p style={{ color: '#555', fontSize: '.8rem', lineHeight: 1.75, marginBottom: 'auto' }}>{p.desc}</p>
               <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span className="font-mono" style={{ fontSize: '8px', color: '#333', letterSpacing: '.2em', textTransform: 'uppercase' }}>{p.category}</span>
+                <span className="font-mono" style={{ fontSize: '8px', color: '#666', letterSpacing: '.2em', textTransform: 'uppercase' }}>{p.category}</span>
                 <span className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.2em', textTransform: 'uppercase' }}>VIEW CASE STUDY →</span>
               </div>
             </div>
@@ -249,7 +249,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
               <div className="font-mono" style={{ fontSize: '10px', color: '#2D5BFF', letterSpacing: '.3em', paddingTop: '.5rem' }}>{s.num}</div>
               <div>
                 <h2 className="display-service" style={{ marginBottom: '1.25rem' }}>{s.title}</h2>
-                <p style={{ color: '#666', fontSize: '.9rem', lineHeight: 1.8, maxWidth: 420 }}>{s.desc}</p>
+                <p style={{ color: '#999', fontSize: '.9rem', lineHeight: 1.8, maxWidth: 420 }}>{s.desc}</p>
               </div>
               <div>
                 <div className="label-xs" style={{ marginBottom: '1rem' }}>DELIVERABLES</div>
@@ -257,7 +257,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
                   {s.deliverables.map((d) => (
                     <li key={d} style={{ display: 'flex', gap: '.75rem', alignItems: 'center' }}>
                       <span style={{ width: 4, height: 4, borderRadius: '50%', background: '#2D5BFF', flexShrink: 0 }} />
-                      <span className="font-mono" style={{ fontSize: '8.5px', color: '#555', letterSpacing: '.12em', textTransform: 'uppercase' }}>{d}</span>
+                      <span className="font-mono" style={{ fontSize: '8.5px', color: '#888', letterSpacing: '.12em', textTransform: 'uppercase' }}>{d}</span>
                     </li>
                   ))}
                 </ul>
@@ -273,7 +273,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
           <div style={{ marginBottom: '3.5rem' }}>
             <div className="sect-label reveal" style={{ marginBottom: '1rem' }}><span className="dot" />TOOLS & TECHNOLOGIES</div>
             <h2 className="display-section reveal"><ScrambleText text="THE TECH STACK" /></h2>
-            <p className="reveal" style={{ color: '#555', fontSize: '.88rem', lineHeight: 1.8, marginTop: '1.25rem', maxWidth: 440 }}>Every tool chosen for performance, scalability, and developer experience. No bloat, no compromise.</p>
+            <p className="reveal" style={{ color: '#888', fontSize: '.88rem', lineHeight: 1.8, marginTop: '1.25rem', maxWidth: 440 }}>Every tool chosen for performance, scalability, and developer experience. No bloat, no compromise.</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))', gap: '1rem' }}>
             {TECH_STACK.map((t, i) => (
@@ -292,7 +292,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <div className="sect-label reveal" style={{ justifyContent: 'center', marginBottom: '1rem' }}><span className="dot" />INVESTMENT</div>
             <h2 className="display-section reveal"><ScrambleText text="TRANSPARENT PRICING" /></h2>
-            <p className="reveal" style={{ color: '#555', fontSize: '.85rem', marginTop: '1.25rem', maxWidth: 420, margin: '1.25rem auto 0' }}>No hidden fees, no surprises. Clear packages designed to deliver maximum value at every stage of your growth.</p>
+            <p className="reveal" style={{ color: '#888', fontSize: '.85rem', marginTop: '1.25rem', maxWidth: 420, margin: '1.25rem auto 0' }}>No hidden fees, no surprises. Clear packages designed to deliver maximum value at every stage of your growth.</p>
           </div>
           <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: '1.25rem' }}>
             {PRICING.map((plan, i) => (
@@ -309,7 +309,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
                   {plan.features.map((f) => (
                     <li key={f} style={{ display: 'flex', alignItems: 'center', gap: '.6rem' }}>
                       <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#2D5BFF', flexShrink: 0 }} />
-                      <span className="font-mono" style={{ fontSize: '8.5px', color: '#555', letterSpacing: '.12em', textTransform: 'uppercase' }}>{f}</span>
+                      <span className="font-mono" style={{ fontSize: '8.5px', color: '#888', letterSpacing: '.12em', textTransform: 'uppercase' }}>{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -362,7 +362,7 @@ function AboutPage({ goTo }: { goTo: (p: Page) => void }) {
             <h2 className="font-bebas" style={{ fontSize: 'clamp(2.5rem,5vw,4rem)', textTransform: 'uppercase', marginBottom: '2rem', lineHeight: .9 }}>Building the web<br /><span style={{ color: '#2D5BFF' }}>from Nairobi.</span></h2>
             <p style={{ color: '#777', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '1.25rem' }}>I build websites from Nairobi with a simple goal. Make them feel as good as the businesses behind them. Too many sites look like afterthoughts. Slow, generic, and hard to trust.</p>
             <p style={{ color: '#777', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '1.25rem' }}>I care about clarity, speed, and restraint. No unnecessary noise. No bloated layouts. Every element should earn its place. The result is work that feels modern, calm, and built to last.</p>
-            <p style={{ color: '#555', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '2.5rem' }}>When I'm not building client projects, I'm studying design systems, refining ideas, and reworking details most people would never notice. It's a bit obsessive. It works.</p>
+            <p style={{ color: '#888', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '2.5rem' }}>When I'm not building client projects, I'm studying design systems, refining ideas, and reworking details most people would never notice. It's a bit obsessive. It works.</p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <button className="btn btn-primary" onClick={() => goTo('contact')}><span className="btn-inner">WORK WITH ME</span></button>
               <button className="btn" onClick={() => goTo('work')}><span className="btn-inner">SEE MY WORK</span></button>
@@ -381,7 +381,7 @@ function AboutPage({ goTo }: { goTo: (p: Page) => void }) {
               <div key={v.title} className="reveal-scale" style={{ transitionDelay: `${i * .08}s`, background: '#0a0a0a', border: '1px solid rgba(255,255,255,.06)', borderRadius: '1.5rem', padding: '2rem' }}>
                 <div className="label-xs" style={{ color: '#2D5BFF', marginBottom: '.75rem' }}>{v.num}</div>
                 <h3 className="font-bebas" style={{ fontSize: '1.6rem', textTransform: 'uppercase', marginBottom: '.75rem' }}>{v.title}</h3>
-                <p style={{ color: '#555', fontSize: '.82rem', lineHeight: 1.8 }}>{v.body}</p>
+                <p style={{ color: '#888', fontSize: '.82rem', lineHeight: 1.8 }}>{v.body}</p>
               </div>
             ))}
           </div>
@@ -403,7 +403,7 @@ function AboutPage({ goTo }: { goTo: (p: Page) => void }) {
                 </div>
                 <div style={{ paddingTop: '.15rem' }}>
                   <h3 className="font-bebas" style={{ fontSize: '1.5rem', textTransform: 'uppercase', marginBottom: '.5rem' }}>{item.title}</h3>
-                  <p style={{ color: '#555', fontSize: '.85rem', lineHeight: 1.8 }}>{item.body}</p>
+                  <p style={{ color: '#888', fontSize: '.85rem', lineHeight: 1.8 }}>{item.body}</p>
                 </div>
               </div>
             ))}
@@ -452,10 +452,10 @@ function BlogPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
                 <div className="font-mono" style={{ fontSize: '8px', color: '#2a2a2a', letterSpacing: '.3em', position: 'relative' }}>FEATURED</div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <div style={{ display: 'flex', gap: '.75rem', marginBottom: '1.25rem', alignItems: 'center' }}><span className="tag">{filtered[0].cat}</span><span className="font-mono" style={{ fontSize: '7px', color: '#333', letterSpacing: '.2em' }}>FEATURED</span></div>
+                <div style={{ display: 'flex', gap: '.75rem', marginBottom: '1.25rem', alignItems: 'center' }}><span className="tag">{filtered[0].cat}</span><span className="font-mono" style={{ fontSize: '7px', color: '#666', letterSpacing: '.2em' }}>FEATURED</span></div>
                 <h2 className="font-bebas" style={{ fontSize: 'clamp(1.8rem,3vw,2.8rem)', textTransform: 'uppercase', marginBottom: '1rem', lineHeight: 1 }}>{filtered[0].title}</h2>
-                <p style={{ color: '#555', fontSize: '.85rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>{filtered[0].excerpt}</p>
-                <div style={{ display: 'flex', gap: '1.5rem' }}><span className="font-mono" style={{ fontSize: '8px', color: '#333', letterSpacing: '.2em' }}>{filtered[0].date}</span><span className="font-mono" style={{ fontSize: '8px', color: '#333', letterSpacing: '.2em' }}>{filtered[0].readTime}</span></div>
+                <p style={{ color: '#888', fontSize: '.85rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>{filtered[0].excerpt}</p>
+                <div style={{ display: 'flex', gap: '1.5rem' }}><span className="font-mono" style={{ fontSize: '8px', color: '#666', letterSpacing: '.2em' }}>{filtered[0].date}</span><span className="font-mono" style={{ fontSize: '8px', color: '#666', letterSpacing: '.2em' }}>{filtered[0].readTime}</span></div>
                 <div style={{ marginTop: '1.5rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#2D5BFF', letterSpacing: '.2em', textTransform: 'uppercase' }}>READ ARTICLE →</div>
               </div>
             </div>
@@ -561,7 +561,7 @@ function FAQPage({ goTo }: { goTo: (p: Page) => void }) {
           <div className="reveal" style={{ background: '#0a0a0a', border: '1px solid rgba(45,91,255,.2)', borderRadius: '2rem', padding: '3rem', textAlign: 'center', marginTop: '2rem' }}>
             <div className="sect-label" style={{ justifyContent: 'center', marginBottom: '1rem' }}><span className="dot" />STILL HAVE QUESTIONS?</div>
             <h2 className="font-bebas" style={{ fontSize: 'clamp(2rem,5vw,3.5rem)', textTransform: 'uppercase', marginBottom: '1rem', lineHeight: 1 }}>Just ask directly.</h2>
-            <p style={{ color: '#555', fontSize: '.88rem', lineHeight: 1.8, maxWidth: 360, margin: '0 auto 2rem' }}>I respond to every inquiry personally, usually within 24 hours.</p>
+            <p style={{ color: '#888', fontSize: '.88rem', lineHeight: 1.8, maxWidth: 360, margin: '0 auto 2rem' }}>I respond to every inquiry personally, usually within 24 hours.</p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <button className="btn btn-primary" onClick={() => goTo('contact')}><span className="btn-inner">SEND A MESSAGE</span></button>
               <a href="mailto:mutanu.sharon@yahoo.com" className="btn"><span className="btn-inner">EMAIL DIRECTLY</span></a>
@@ -608,7 +608,7 @@ function ContactPage() {
                 <div style={{ width: 36, height: 36, border: '1px solid rgba(45,91,255,.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#2D5BFF', letterSpacing: '.1em' }}>{item.s}</div>
                 <div>
                   <h3 className="font-bebas" style={{ fontSize: '1.3rem', textTransform: 'uppercase', marginBottom: '.4rem' }}>{item.title}</h3>
-                  <p style={{ color: '#555', fontSize: '.82rem', lineHeight: 1.7 }}>{item.body}</p>
+                  <p style={{ color: '#888', fontSize: '.82rem', lineHeight: 1.7 }}>{item.body}</p>
                 </div>
               </div>
             ))}
