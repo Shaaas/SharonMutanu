@@ -35,6 +35,7 @@ export interface Project {
   category: string;
   color: string;
   hasDoc?: boolean;
+  image?: string;
 }
 
 export interface Service {

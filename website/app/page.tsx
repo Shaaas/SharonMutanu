@@ -104,12 +104,16 @@ function WorkPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
               onClick={() => goTo('work-case', p.slug)}
             >
               <div style={{ height: 3, background: `linear-gradient(90deg,${p.color},#2D5BFF)`, borderRadius: '2rem 2rem 0 0', margin: '-2.5rem -2.5rem 2rem' }} />
-              {p.url && (
-                <div style={{ height: 200, borderRadius: '1rem', overflow: 'hidden', marginBottom: '1.5rem', position: 'relative', pointerEvents: 'none' }}>
-                  <iframe src={p.url} style={{ width: '200%', height: '200%', transform: 'scale(0.5)', transformOrigin: 'top left', border: 'none', pointerEvents: 'none' }} />
-                  <div style={{ position: 'absolute', inset: 0 }} />
-                </div>
-              )}
+              <div style={{ height: 200, borderRadius: '1rem', overflow: 'hidden', marginBottom: '1.5rem', position: 'relative' }}>
+                {p.image ? (
+                  <img src={p.image} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                ) : p.url ? (
+                  <>
+                    <iframe src={p.url} style={{ width: '200%', height: '200%', transform: 'scale(0.5)', transformOrigin: 'top left', border: 'none', pointerEvents: 'none' }} />
+                    <div style={{ position: 'absolute', inset: 0 }} />
+                  </>
+                ) : null}
+              </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
                 <div className="label-xs" style={{ color: '#2D5BFF' }}>{String(i + 1).padStart(2, '0')}</div>
                 <div className="label-xs">{p.year}</div>
@@ -172,29 +176,35 @@ function CaseStudyPage({ slug, goTo }: { slug: string; goTo: (p: Page, slug?: st
         <div className="case-study-grid" style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 360px', gap: '5rem', alignItems: 'start' }}>
           <div>
             <div style={{ background: '#0d0d0d', border: '1px solid rgba(255,255,255,.07)', borderRadius: '1.5rem', aspectRatio: '16/9', marginBottom: '3.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-              {/* Background gradient */}
-              <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg,${project.color}60 0%,#050505 65%)` }} />
-              {/* Dot grid */}
-              <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: 0.06 }} xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <pattern id="pg" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
-                    <circle cx="1" cy="1" r="1" fill="#fff" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#pg)" />
-              </svg>
-              {/* Content */}
-              <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', padding: '2rem' }}>
-                <div className="font-bebas" style={{ fontSize: 'clamp(2.5rem,6vw,5rem)', color: 'rgba(255,255,255,.25)', letterSpacing: '.05em', textTransform: 'uppercase', lineHeight: .9 }}>{project.name}</div>
-                <div style={{ display: 'flex', gap: '.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-                  {project.tags.map((t) => <span key={t} className="tag">{t}</span>)}
-                </div>
-                {project.url && (
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                    <span className="btn-inner">VIEW LIVE SITE</span>
-                  </a>
-                )}
-              </div>
+              {project.image ? (
+                <>
+                  <img src={project.image} alt={project.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(5,5,5,.6) 0%, transparent 50%)' }} />
+                  <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', display: 'flex', gap: '.5rem', flexWrap: 'wrap' }}>
+                    {project.tags.map((t) => <span key={t} className="tag">{t}</span>)}
+                  </div>
+                  {project.url && (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ position: 'absolute', bottom: '1.5rem', right: '1.5rem' }}>
+                      <span className="btn-inner">VIEW LIVE SITE</span>
+                    </a>
+                  )}
+                </>
+              ) : (
+                <>
+                  <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg,${project.color}60 0%,#050505 65%)` }} />
+                  <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', padding: '2rem' }}>
+                    <div className="font-bebas" style={{ fontSize: 'clamp(2.5rem,6vw,5rem)', color: 'rgba(255,255,255,.25)', letterSpacing: '.05em', textTransform: 'uppercase', lineHeight: .9 }}>{project.name}</div>
+                    <div style={{ display: 'flex', gap: '.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+                      {project.tags.map((t) => <span key={t} className="tag">{t}</span>)}
+                    </div>
+                    {project.url && (
+                      <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                        <span className="btn-inner">VIEW LIVE SITE</span>
+                      </a>
+                    )}
+                  </div>
+                </>
+              )}
             </div>
             {[['THE CHALLENGE', project.challenge], ['THE SOLUTION', project.solution]].map(([label, text]) => (
               <div key={label} style={{ marginBottom: '3rem' }}>
