@@ -41,7 +41,7 @@ export function ContactForm() {
     if (!validate()) return;
     setSending(true);
     try {
-      const res = await fetch('https://formspree.io/f/xpwzgkqb', {
+      const res = await fetch('https://formspree.io/f/xeebgrdz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
