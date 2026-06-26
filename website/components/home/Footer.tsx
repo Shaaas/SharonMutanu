@@ -90,7 +90,7 @@ export function Footer({ goTo }: Props) {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,.05)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-          <span className="font-mono" style={{ fontSize: '8px', color: '#444', letterSpacing: '.3em', textTransform: 'uppercase' }}>© 2025 MYSA — NAIROBI, KENYA</span>
+          <span className="font-mono" style={{ fontSize: '8px', color: '#444', letterSpacing: '.3em', textTransform: 'uppercase' }}>© 2025 MYSA - NAIROBI, KENYA</span>
         </div>
       </div>
     </footer>

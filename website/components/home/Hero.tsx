@@ -90,7 +90,7 @@ export function Hero({ goTo }: Props) {
           textTransform: 'uppercase', whiteSpace: 'nowrap',
         }}
       >
-        NAIROBI — KE — EST. 2023
+        NAIROBI - KE - EST. 2023
       </div>
 
       <div style={{ maxWidth: 1400, margin: '0 auto', width: '100%' }}>
@@ -99,7 +99,7 @@ export function Hero({ goTo }: Props) {
           <div className="sect-label"><span className="dot" />OPERATIONAL STATUS: ONLINE</div>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '.75rem', background: 'rgba(45,91,255,.08)', border: '1px solid rgba(45,91,255,.2)', borderRadius: 999, padding: '.5rem 1.25rem' }}>
             <span className="dot" />
-            <span className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.3em', textTransform: 'uppercase' }}>ACCEPTING NEW PROJECTS — 2026</span>
+            <span className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.3em', textTransform: 'uppercase' }}>ACCEPTING NEW PROJECTS - 2026</span>
           </div>
         </div>
 

@@ -12,7 +12,7 @@ const REASONS = [
       </svg>
     ),
     title: 'Fast Turnaround',
-    body: 'Most projects delivered in 2–4 weeks. No agency bloat — just focused, efficient execution from one person who cares.',
+    body: 'Most projects delivered in 2–4 weeks. No agency bloat, just focused, efficient execution from one person who cares.',
   },
   {
     num: '02',
@@ -22,7 +22,7 @@ const REASONS = [
       </svg>
     ),
     title: 'Results-Focused',
-    body: 'Every design decision is backed by conversion principles. Beautiful AND functional — never one without the other.',
+    body: 'Every design decision is backed by conversion principles. Beautiful AND functional. Never one without the other.',
   },
   {
     num: '03',
@@ -44,7 +44,7 @@ const REASONS = [
       </svg>
     ),
     title: 'Direct Access',
-    body: 'You work directly with me — no account managers, no miscommunication, no delays. One point of contact, always.',
+    body: 'You work directly with me! No account managers, no miscommunication, no delays. One point of contact, always.',
   },
 ];
 

@@ -172,10 +172,17 @@ function CaseStudyPage({ slug, goTo }: { slug: string; goTo: (p: Page, slug?: st
         <div className="case-study-grid" style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 360px', gap: '5rem', alignItems: 'start' }}>
           <div>
             <div style={{ background: '#0d0d0d', border: '1px solid rgba(255,255,255,.07)', borderRadius: '1.5rem', aspectRatio: '16/9', marginBottom: '3.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg,${project.color}30 0%,transparent 60%)` }} />
-              <div style={{ textAlign: 'center', position: 'relative' }}>
-                <div className="font-bebas" style={{ fontSize: '4rem', color: 'rgba(45,91,255,.3)', letterSpacing: '.05em' }}>{project.name}</div>
-                <div className="font-mono" style={{ fontSize: '8px', color: '#2a2a2a', letterSpacing: '.3em', textTransform: 'uppercase', marginTop: '.5rem' }}>PROJECT PREVIEW</div>
+              <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg,${project.color}40 0%,#0a0a0a 70%)` }} />
+              <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
+                <div className="font-bebas" style={{ fontSize: 'clamp(2rem,5vw,3.5rem)', color: 'rgba(255,255,255,.12)', letterSpacing: '.05em', textTransform: 'uppercase' }}>{project.name}</div>
+                <div style={{ display: 'flex', gap: '.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+                  {project.tags.map((t) => <span key={t} className="tag">{t}</span>)}
+                </div>
+                {project.url && (
+                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    <span className="btn-inner">VIEW LIVE SITE</span>
+                  </a>
+                )}
               </div>
             </div>
             {[['THE CHALLENGE', project.challenge], ['THE SOLUTION', project.solution]].map(([label, text]) => (
@@ -330,9 +337,9 @@ function AboutPage({ goTo }: { goTo: (p: Page) => void }) {
   useReveal();
   const VALUES = [
     { num: '01', title: 'Craft Over Templates',    body: 'Every site is built from scratch, in code. No Squarespace, no page builders. The difference is measurable in performance and visible in the result.' },
-    { num: '02', title: 'Business-First Design',   body: 'A beautiful site that does not convert is just expensive art. I design with business outcomes in mind first, aesthetics second — ideally both.' },
+    { num: '02', title: 'Business-First Design',   body: 'A beautiful site that does not convert is just expensive art. I design with business outcomes in mind first, aesthetics second - ideally both.' },
     { num: '03', title: 'Radical Transparency',    body: 'You will always know where your project stands. I do not overpromise, disappear, or invoice for things not agreed upfront.' },
-    { num: '04', title: 'Continuous Improvement',  body: 'The web moves fast. I spend time every week learning — new tools, new techniques, new thinking. Your project benefits from that.' },
+    { num: '04', title: 'Continuous Improvement',  body: 'The web moves fast. I spend time every week learning - new tools, new techniques, new thinking. Your project benefits from that.' },
   ];
   return (
     <div>

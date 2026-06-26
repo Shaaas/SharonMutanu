@@ -5,28 +5,28 @@ export const SERVICES: Service[] = [
     num: '01',
     title: 'Web Design',
     short: 'Clean, modern websites that convert.',
-    desc: 'Every pixel is intentional. I design websites that communicate your brand clearly, guide visitors naturally, and convert browsers into customers. No templates — everything built from scratch.',
+    desc: 'Every pixel is intentional. I design websites that communicate your brand clearly, guide visitors naturally, and convert browsers into customers. No templates - everything built from scratch.',
     deliverables: ['Brand-aligned visual design', 'Mobile-first responsive layouts', 'Interactive prototypes', 'Design system & style guide'],
   },
   {
     num: '02',
     title: 'Web Development',
     short: 'Custom-built, hand-coded, fast.',
-    desc: 'Hand-coded with modern tooling — no bloated page builders. Fast, accessible, SEO-ready websites built on Next.js that you fully own and control.',
+    desc: 'Hand-coded with modern tooling - no bloated page builders. Fast, accessible, SEO-ready websites built on Next.js that you fully own and control.',
     deliverables: ['Next.js / React development', 'CMS integration', 'API integrations', 'Performance optimisation'],
   },
   {
     num: '03',
     title: 'Digital Platforms & Systems',
     short: 'Full-stack products that run your business.',
-    desc: 'Beyond websites — I build digital systems. Member portals, admin dashboards, payment flows, database-backed platforms. If your business needs software to operate, I build it. Like UBTA: a full member management platform with M-Pesa payments, Supabase backend, admin portal, certificate generation, and member verification — serving 3,900+ riders across Kenya.',
+    desc: 'Beyond websites - I build digital systems. Member portals, admin dashboards, payment flows, database-backed platforms. If your business needs software to operate, I build it. Like UBTA: a full member management platform with M-Pesa payments, Supabase backend, admin portal, certificate generation, and member verification - serving 3,900+ riders across Kenya.',
     deliverables: ['Member & admin portals', 'Payment integration (M-Pesa, Stripe)', 'Supabase / PostgreSQL backend', 'Authentication & role-based access', 'PDF generation & digital certificates', 'Real-time dashboards'],
   },
   {
     num: '04',
     title: 'Landing Pages',
     short: 'Built to convert, engineered to impress.',
-    desc: 'Single-page experiences built around one goal — sign ups, sales, or leads. Every element earns its place. 48-hour turnaround available.',
+    desc: 'Single-page experiences built around one goal - sign ups, sales, or leads. Every element earns its place. 48-hour turnaround available.',
     deliverables: ['Conversion-focused layout', 'A/B testing ready', 'Analytics integration', '48hr turnaround available'],
   },
   {
@@ -64,7 +64,7 @@ export const TECH_STACK: TechItem[] = [
 
 export const TESTIMONIALS = [
   {
-    quote: 'MYSA delivered our healthcare platform ahead of schedule. The attention to UX detail was exceptional — our patients and clinical staff both love it. Best investment we have made in our digital infrastructure.',
+    quote: 'MYSA delivered our healthcare platform ahead of schedule. The attention to UX detail was exceptional - our patients and clinical staff both love it. Best investment we have made in our digital infrastructure.',
     name: 'Dr. A. Mwangi',
     role: 'Founder, Soma Health',
   },
@@ -81,10 +81,10 @@ export const TESTIMONIALS = [
 ];
 
 export const TIMELINE = [
-  { year: '2019', title: 'First Lines of Code',   body: 'Started learning web development out of frustration with how bad most websites looked. Built my first site for a local restaurant — for free, just for the experience.' },
+  { year: '2019', title: 'First Lines of Code',   body: 'Started learning web development out of frustration with how bad most websites looked. Built my first site for a local restaurant - for free, just for the experience.' },
   { year: '2020', title: 'First Paid Project',     body: 'Landed a $150 freelance job. Spent 3× the estimated time on it. Learned more in those weeks than in months of tutorials.' },
   { year: '2021', title: 'Going Deeper',           body: 'Committed fully to the craft. Studied design systems, performance engineering, and conversion optimisation. Built obsessively.' },
-  { year: '2022', title: 'MYSA Founded',           body: 'Formalised the practice. Started taking on clients with intention — fewer projects, done properly. Quality over quantity.' },
+  { year: '2022', title: 'MYSA Founded',           body: 'Formalised the practice. Started taking on clients with intention - fewer projects, done properly. Quality over quantity.' },
   { year: '2023', title: 'Building Reputation',    body: 'First international clients. First SaaS project. First featured mention. The work started speaking for itself.' },
   { year: '2024', title: 'Now',                    body: 'Working with ambitious businesses across Kenya and globally. Still obsessed with the craft. Still building things that matter.' },
 ];
