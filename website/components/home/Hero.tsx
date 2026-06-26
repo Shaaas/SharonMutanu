@@ -18,9 +18,10 @@ export function Hero({ goTo }: Props) {
         position: 'relative', overflow: 'hidden',
       }}
     >
-      {/* Animated dot grid */}
+      {/* Animated background */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none' }}>
-        <svg width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.18 }}>
+        {/* Dot grid */}
+        <svg width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.15 }}>
           <defs>
             <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
               <circle cx="1" cy="1" r="1" fill="#2D5BFF" />
@@ -28,10 +29,27 @@ export function Hero({ goTo }: Props) {
           </defs>
           <rect width="100%" height="100%" fill="url(#dots)" />
         </svg>
-        {/* Gradient overlay to fade dots */}
+        {/* Animated orbs */}
+        <div style={{
+          position: 'absolute', top: '-20%', right: '-10%',
+          width: '60vw', height: '60vw', maxWidth: 700, maxHeight: 700,
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(45,91,255,0.15) 0%, rgba(45,91,255,0.05) 40%, transparent 70%)',
+          filter: 'blur(40px)',
+          animation: 'orbFloat 8s ease-in-out infinite',
+        }} />
+        <div style={{
+          position: 'absolute', bottom: '10%', left: '-5%',
+          width: '40vw', height: '40vw', maxWidth: 500, maxHeight: 500,
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(45,91,255,0.08) 0%, transparent 70%)',
+          filter: 'blur(60px)',
+          animation: 'orbFloat 12s ease-in-out infinite reverse',
+        }} />
+        {/* Gradient fade */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'radial-gradient(ellipse at 50% 50%, transparent 20%, #050505 80%)',
+          background: 'radial-gradient(ellipse at 50% 50%, transparent 30%, #050505 85%)',
         }} />
       </div>
       {/* Animated background elements */}

@@ -724,7 +724,7 @@ export default function MysaStudio() {
 </ul>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-          <div className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '.5rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#222', letterSpacing: '.2em' }}>
+          <div className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '.5rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#444', letterSpacing: '.2em' }}>
             <span className="dot" />ONLINE
           </div>
           <button className="btn btn-primary btn-sm hide-mobile" onClick={() => goTo('contact')}><span className="btn-inner">Start a Project</span></button>
