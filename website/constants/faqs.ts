@@ -25,7 +25,8 @@ export const FAQS: FAQSection[] = [
       { q: 'How does payment work?',                        a: '50% upfront to begin, 50% on final delivery. I accept M-Pesa, bank transfer, and PayPal. The quote you receive is the price you pay - no hidden fees.' },
       { q: 'Do you work with international clients?',       a: 'Yes. Most of my workflow is remote-first - calls over Google Meet, files via Notion or Google Drive. I have worked with clients in Kenya, UK, Canada, and the US.' },
       { q: 'What happens after the site launches?',         a: '30 days of free post-launch support for bugs or small tweaks. After that, a maintenance retainer is optional but recommended.' },
-      { q: "What if I need something not in a package?",    a: "Most projects are scoped custom anyway - the packages are starting points. Tell me what you need and I'll price it fairly." },
+      { q: "What if I need something not in a package?",    a: "Most projects are scoped custom anyway - the packages are starting points. Tell me what you need and I will price it fairly." },
+      { q: "Can you build platforms and systems, not just websites?", a: "Yes - this is a big part of what I do. I have built member management systems, M-Pesa payment flows, admin portals, and database-backed platforms. If your business needs software to run, get in touch." },
     ],
   },
 ];
