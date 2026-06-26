@@ -172,9 +172,20 @@ function CaseStudyPage({ slug, goTo }: { slug: string; goTo: (p: Page, slug?: st
         <div className="case-study-grid" style={{ maxWidth: 1200, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 360px', gap: '5rem', alignItems: 'start' }}>
           <div>
             <div style={{ background: '#0d0d0d', border: '1px solid rgba(255,255,255,.07)', borderRadius: '1.5rem', aspectRatio: '16/9', marginBottom: '3.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg,${project.color}40 0%,#0a0a0a 70%)` }} />
-              <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
-                <div className="font-bebas" style={{ fontSize: 'clamp(2rem,5vw,3.5rem)', color: 'rgba(255,255,255,.12)', letterSpacing: '.05em', textTransform: 'uppercase' }}>{project.name}</div>
+              {/* Background gradient */}
+              <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg,${project.color}60 0%,#050505 65%)` }} />
+              {/* Dot grid */}
+              <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: 0.06 }} xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="pg" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                    <circle cx="1" cy="1" r="1" fill="#fff" />
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#pg)" />
+              </svg>
+              {/* Content */}
+              <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', padding: '2rem' }}>
+                <div className="font-bebas" style={{ fontSize: 'clamp(2.5rem,6vw,5rem)', color: 'rgba(255,255,255,.25)', letterSpacing: '.05em', textTransform: 'uppercase', lineHeight: .9 }}>{project.name}</div>
                 <div style={{ display: 'flex', gap: '.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
                   {project.tags.map((t) => <span key={t} className="tag">{t}</span>)}
                 </div>
@@ -188,18 +199,18 @@ function CaseStudyPage({ slug, goTo }: { slug: string; goTo: (p: Page, slug?: st
             {[['THE CHALLENGE', project.challenge], ['THE SOLUTION', project.solution]].map(([label, text]) => (
               <div key={label} style={{ marginBottom: '3rem' }}>
                 <div className="sect-label" style={{ marginBottom: '1.25rem' }}><span className="dot" />{label}</div>
-                <p style={{ color: '#888', fontSize: '.95rem', lineHeight: 1.9 }}>{text}</p>
+                <p style={{ color: '#bbb', fontSize: '.95rem', lineHeight: 1.9 }}>{text}</p>
               </div>
             ))}
           </div>
           <div style={{ position: 'sticky', top: '7rem' }}>
-            <div style={{ background: '#0a0a0a', border: '1px solid rgba(45,91,255,.2)', borderRadius: '1.5rem', padding: '2rem', marginBottom: '1.5rem' }}>
+            <div style={{ background: '#0f0f0f', border: '1px solid rgba(45,91,255,.25)', borderRadius: '1.5rem', padding: '2rem', marginBottom: '1.5rem' }}>
               <div className="sect-label" style={{ marginBottom: '1.5rem' }}><span className="dot" />RESULTS</div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 {project.results.map((r, i) => (
                   <li key={i} style={{ display: 'flex', gap: '.75rem', alignItems: 'flex-start' }}>
                     <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#2D5BFF', marginTop: '.45rem', flexShrink: 0 }} />
-                    <span style={{ color: '#bbb', fontSize: '.85rem', lineHeight: 1.6 }}>{r}</span>
+                    <span style={{ color: '#ccc', fontSize: '.88rem', lineHeight: 1.7 }}>{r}</span>
                   </li>
                 ))}
               </ul>
@@ -565,7 +576,7 @@ function FAQPage({ goTo }: { goTo: (p: Page) => void }) {
               {section.items.map((item, i) => <FAQItem key={item.q} q={item.q} a={item.a} index={i} />)}
             </div>
           ))}
-          <div className="reveal" style={{ background: '#0a0a0a', border: '1px solid rgba(45,91,255,.2)', borderRadius: '2rem', padding: '3rem', textAlign: 'center', marginTop: '2rem' }}>
+          <div className="reveal" style={{ background: '#0f0f0f', border: '1px solid rgba(45,91,255,.25)', borderRadius: '2rem', padding: '3rem', textAlign: 'center', marginTop: '2rem' }}>
             <div className="sect-label" style={{ justifyContent: 'center', marginBottom: '1rem' }}><span className="dot" />STILL HAVE QUESTIONS?</div>
             <h2 className="font-bebas" style={{ fontSize: 'clamp(2rem,5vw,3.5rem)', textTransform: 'uppercase', marginBottom: '1rem', lineHeight: 1 }}>Just ask directly.</h2>
             <p style={{ color: '#888', fontSize: '.88rem', lineHeight: 1.8, maxWidth: 360, margin: '0 auto 2rem' }}>I respond to every inquiry personally, usually within 24 hours.</p>
