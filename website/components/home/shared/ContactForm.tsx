@@ -35,7 +35,35 @@ export function ContactForm() {
   const next = () => { if (!validate()) return; setDir('right'); setFormKey((k) => k + 1); setStep((s) => Math.min(s + 1, FIELDS.length - 1)); };
   const back = () => { setErrors({}); setDir('left'); setFormKey((k) => k + 1); setStep((s) => Math.max(s - 1, 0)); };
   const change = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => { setFormData((p) => ({ ...p, [FIELDS[step].key]: e.target.value })); setErrors({}); };
-  const submit = (e: React.FormEvent) => { e.preventDefault(); if (!validate()) return; console.log('Form submitted:', formData); setSubmitted(true); };
+  const [sending, setSending] = useState(false);
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!validate()) return;
+    setSending(true);
+    try {
+      const res = await fetch('https://formspree.io/f/xpwzgkqb', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          projectType: formData.projectType,
+          budget: formData.budget,
+          details: formData.details,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        alert('Something went wrong. Please email mutanu.sharon@yahoo.com directly.');
+      }
+    } catch {
+      alert('Something went wrong. Please email mutanu.sharon@yahoo.com directly.');
+    } finally {
+      setSending(false);
+    }
+  };
 
   const f = FIELDS[step];
   const ferr = errors[f.key];
@@ -55,14 +83,14 @@ export function ContactForm() {
           <div key={i} style={{ flex: 1, height: 2, borderRadius: 1, background: i <= step ? '#2D5BFF' : 'rgba(255,255,255,.07)', transition: 'background .4s' }} />
         ))}
       </div>
-      <div className="font-mono" style={{ fontSize: '8px', color: '#2a2a2a', letterSpacing: '.3em', marginBottom: '1.75rem' }}>
+      <div className="font-mono" style={{ fontSize: '8px', color: '#666', letterSpacing: '.3em', marginBottom: '1.75rem' }}>
         STEP {step + 1} / {FIELDS.length}
       </div>
       <div key={formKey} className={dir === 'right' ? 'anim-slideR' : 'anim-slideL'} style={{ minHeight: 180 }}>
         <label
           htmlFor={`f-${f.key}`}
           className="font-mono"
-          style={{ display: 'block', fontSize: '9px', color: '#444', letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: '.75rem' }}
+          style={{ display: 'block', fontSize: '9px', color: '#888', letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: '.75rem' }}
         >
           {f.label} // INPUT
         </label>
@@ -90,7 +118,7 @@ export function ContactForm() {
         <button
           type="button" onClick={back} disabled={step === 0}
           className="font-mono"
-          style={{ background: 'none', border: 'none', cursor: step === 0 ? 'default' : 'pointer', fontSize: '9px', letterSpacing: '.3em', textTransform: 'uppercase', color: step === 0 ? 'transparent' : '#444', transition: 'color .2s', pointerEvents: step === 0 ? 'none' : 'auto' }}
+          style={{ background: 'none', border: 'none', cursor: step === 0 ? 'default' : 'pointer', fontSize: '9px', letterSpacing: '.3em', textTransform: 'uppercase', color: step === 0 ? 'transparent' : '#888', transition: 'color .2s', pointerEvents: step === 0 ? 'none' : 'auto' }}
         >
           [ BACK ]
         </button>
@@ -99,7 +127,7 @@ export function ContactForm() {
             [ NEXT ]
           </button>
         ) : (
-          <button type="submit" className="btn btn-primary"><span className="btn-inner">TRANSMIT DATA</span></button>
+          <button type="submit" className="btn btn-primary" disabled={sending}><span className="btn-inner">{sending ? 'SENDING...' : 'SEND MESSAGE'}</span></button>
         )}
       </div>
     </form>
