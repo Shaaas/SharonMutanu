@@ -7,16 +7,16 @@ const spaceMono = Space_Mono({ weight: ['400', '700'], subsets: ['latin'], varia
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: { default: 'MUTANU STUDIO — Systems Engineering', template: '%s | MUTANU STUDIO' },
+  title: { default: 'MYSA Studio — Web Design & Digital Systems', template: '%s | MYSA Studio' },
   description: 'Architecting high-performance digital infrastructure for ambitious businesses. Web design, development, and digital strategy from Nairobi.',
   keywords: ['web design', 'web development', 'UI/UX', 'Nairobi', 'digital studio'],
   openGraph: {
     type: 'website', locale: 'en_KE', url: 'https://mutanostudio.com', siteName: 'Mutanu Studio',
-    title: 'MUTANU STUDIO — Systems Engineering',
+    title: 'MYSA Studio — Web Design & Digital Systems',
     description: 'Architecting high-performance digital infrastructure for ambitious businesses.',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Mutanu Studio' }],
   },
-  twitter: { card: 'summary_large_image', title: 'MUTANU STUDIO', images: ['/og-image.png'], creator: '@mutanostudio' },
+  twitter: { card: 'summary_large_image', title: 'MYSA Studio', images: ['/og-image.png'], creator: '@mutanostudio' },
   icons: { icon: '/favicon.ico', apple: '/apple-touch-icon.png' },
   robots: { index: true, follow: true },
 };
