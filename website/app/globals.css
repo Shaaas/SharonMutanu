@@ -318,6 +318,7 @@ body {
     linear-gradient(rgba(45,91,255,.07) 1px, transparent 1px),
     linear-gradient(90deg, rgba(45,91,255,.07) 1px, transparent 1px);
   background-size: 70px 70px;
+  box-shadow: inset 0 0 200px rgba(0,0,0,.8);
 }
 
 ::-webkit-scrollbar       { width: 3px; }
@@ -484,7 +485,7 @@ select.input option { background:#111; color:#fff; }
 .page-section { padding:4rem 2.5rem; }
 .page-section-dark { background:#0c0c0c; border-top:1px solid rgba(255,255,255,.04); border-bottom:1px solid rgba(255,255,255,.04); }
 .section-divider { border-top:1px solid rgba(255,255,255,.05); }
-.page-hero-glow { position:absolute; top:0; left:0; right:0; height:400px; background:radial-gradient(ellipse at 50% -20%,rgba(45,91,255,.12) 0%,transparent 65%); pointer-events:none; }
+.page-hero-glow { position:absolute; top:0; left:0; right:0; height:500px; background:radial-gradient(ellipse at 50% -10%,rgba(45,91,255,.22) 0%,transparent 65%); pointer-events:none; }
 
 /* ─── Timeline ───────────────────────────────────────────────────── */
 .timeline-line { position:absolute; left:80px; top:0; bottom:0; width:1px; background:linear-gradient(to bottom,transparent,rgba(45,91,255,.3),transparent); }
