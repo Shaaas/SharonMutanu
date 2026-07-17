@@ -128,7 +128,7 @@ export function Hero({ goTo }: Props) {
         >
           <ScrambleText text="MYSA" delay={300} />
         </div>
-        <div className="anim-fadeUp d3 display-hero text-outline">STUDIO</div>
+        <div className="anim-fadeUp d3 display-hero text-outline">BUILDS</div>
 
         {/* Marquee */}
         <div
