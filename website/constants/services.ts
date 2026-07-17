@@ -19,8 +19,8 @@ export const SERVICES: Service[] = [
     num: '03',
     title: 'Digital Platforms & Systems',
     short: 'Full-stack products that run your business.',
-    desc: 'Beyond websites - I build digital systems. Member portals, admin dashboards, payment flows, database-backed platforms. If your business needs software to operate, I build it. Like UBTA: a full member management platform with M-Pesa payments, Supabase backend, admin portal, certificate generation, and member verification - serving 3,900+ riders across Kenya.',
-    deliverables: ['Member & admin portals', 'Payment integration (M-Pesa, Stripe)', 'Supabase / PostgreSQL backend', 'Authentication & role-based access', 'PDF generation & digital certificates', 'Real-time dashboards'],
+    desc: 'Beyond websites - I build digital systems. SACCO management platforms, delivery apps, member portals, admin dashboards, and payment flows. If your business needs software to operate, I build it. Source code is licensed intellectual property of MYSA Builds - you get a full usage licence, not the raw code.',
+    deliverables: ['SACCO and cooperative systems', 'Delivery and logistics apps (PWA)', 'Member and admin portals', 'M-Pesa and Stripe payment integration', 'Supabase / PostgreSQL backend', 'Authentication and role-based access', 'PDF generation and certificates', 'Real-time dashboards'],
   },
   {
     num: '04',
@@ -60,6 +60,8 @@ export const TECH_STACK: TechItem[] = [
   { name: 'Figma',         cat: 'DESIGN'    },
   { name: 'Vercel',        cat: 'DEPLOYMENT'},
   { name: 'Framer Motion', cat: 'ANIMATION' },
+  { name: 'Python',        cat: 'LANGUAGE'  },
+  { name: 'FastAPI',       cat: 'BACKEND'   },
 ];
 
 export const TESTIMONIALS = [
