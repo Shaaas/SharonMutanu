@@ -24,20 +24,12 @@ const SOCIALS = [
   { label: 'Writing',     url: 'https://sharonlivingcanvas.netlify.app/' },
 ];
 
-function hoverOn(e: React.MouseEvent<HTMLElement>) {
-  e.currentTarget.style.color = '#fff';
-}
-function hoverOff(e: React.MouseEvent<HTMLElement>) {
-  e.currentTarget.style.color = '#bbb';
-}
-
 export function Footer({ goTo }: Props) {
   return (
     <footer style={{ borderTop: '1px solid rgba(255,255,255,.06)', padding: '4rem 2.5rem 2.5rem', background: '#050505' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gap: '4rem', marginBottom: '4rem' }} className="three-col">
 
-          {/* Brand */}
           <div>
             <button
               onClick={() => goTo('home')}
@@ -64,7 +56,6 @@ export function Footer({ goTo }: Props) {
             </button>
           </div>
 
-          {/* Nav */}
           <div>
             <div className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.45em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Pages</div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '.75rem' }}>
@@ -73,8 +64,8 @@ export function Footer({ goTo }: Props) {
                   <button
                     onClick={() => goTo(page)}
                     style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '.82rem', color: '#bbb', transition: 'color .2s', fontFamily: 'inherit' }}
-                    onMouseEnter={hoverOn}
-                    onMouseLeave={hoverOff}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#fff'; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = '#bbb'; }}
                   >
                     {label}
                   </button>
@@ -83,7 +74,6 @@ export function Footer({ goTo }: Props) {
             </ul>
           </div>
 
-          {/* Socials */}
           <div>
             <div className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.45em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Connect</div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '.75rem' }}>
@@ -94,11 +84,9 @@ export function Footer({ goTo }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ fontSize: '.82rem', color: '#bbb', textDecoration: 'none', transition: 'color .2s' }}
-                    onMouseEnter={hoverOn}
-                    onMouseLeave={hoverOff}
-                  >
-                    {s.label}
-                  </a>
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#fff'; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = '#bbb'; }}
+                  >{s.label}</a>
                 </li>
               ))}
             </ul>
