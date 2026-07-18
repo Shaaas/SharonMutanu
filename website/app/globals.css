@@ -297,7 +297,7 @@ body {
   --fg:            #ffffff;
   --accent:        #2D5BFF;
   --accent-hover:  #4a74ff;
-  --muted:         #888888;
+  --muted:         #aaaaaa;
   --border:        rgba(255,255,255,0.12);
   --border-accent: rgba(45,91,255,0.35);
   --card-bg:       #0d0d0d;
@@ -379,7 +379,7 @@ body {
 
 /* ─── Labels ─────────────────────────────────────────────────────── */
 .sect-label { font-family:var(--font-mono); font-size:9px; letter-spacing:.45em; text-transform:uppercase; color:var(--accent); display:inline-flex; align-items:center; gap:.6rem; }
-.label-xs   { font-family:var(--font-mono); font-size:8px;  letter-spacing:.3em;  text-transform:uppercase; color:var(--muted); }
+.label-xs   { font-family:var(--font-mono); font-size:8px;  letter-spacing:.3em;  text-transform:uppercase; color:#999; }
 
 /* ─── Dot ────────────────────────────────────────────────────────── */
 .dot { width:6px; height:6px; border-radius:50%; background:var(--accent); display:inline-block; animation:pulse 2s ease-in-out infinite; flex-shrink:0; }

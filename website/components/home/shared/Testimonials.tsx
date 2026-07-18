@@ -29,7 +29,7 @@ export function Testimonials() {
               </div>
               <div>
                 <div className="font-bebas" style={{ fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '.05em', color: '#fff' }}>{t.name}</div>
-                <div className="font-mono" style={{ fontSize: '8px', color: '#555', letterSpacing: '.2em', textTransform: 'uppercase' }}>{t.role}</div>
+                <div className="font-mono" style={{ fontSize: '8px', color: '#aaa', letterSpacing: '.2em', textTransform: 'uppercase' }}>{t.role}</div>
               </div>
             </div>
           </div>

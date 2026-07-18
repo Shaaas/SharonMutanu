@@ -145,7 +145,7 @@ export function Hero({ goTo }: Props) {
 
         {/* Tagline + CTAs */}
         <div className="anim-fadeUp d4" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-end', justifyContent: 'space-between', gap: '2rem', marginBottom: '4rem' }}>
-          <p className="font-mono" style={{ fontSize: '10px', color: '#555', letterSpacing: '.5em', textTransform: 'uppercase', lineHeight: 2, maxWidth: 360 }}>
+          <p className="font-mono" style={{ fontSize: '10px', color: '#aaa', letterSpacing: '.5em', textTransform: 'uppercase', lineHeight: 2, maxWidth: 360 }}>
             ARCHITECTING HIGH-FIDELITY<br />DIGITAL INFRASTRUCTURE<br />FOR AMBITIOUS BUSINESSES
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -168,7 +168,7 @@ export function Hero({ goTo }: Props) {
 
       <div
         className="anim-fadeIn d6 hide-mobile"
-        style={{ position: 'absolute', bottom: '2.5rem', right: '2.5rem', display: 'flex', alignItems: 'center', gap: '.75rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#1e1e1e', letterSpacing: '.3em', textTransform: 'uppercase' }}
+        style={{ position: 'absolute', bottom: '2.5rem', right: '2.5rem', display: 'flex', alignItems: 'center', gap: '.75rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#666', letterSpacing: '.3em', textTransform: 'uppercase' }}
       >
         SCROLL
         <div style={{ width: 1, height: 40, background: 'linear-gradient(to bottom,#2D5BFF,transparent)', animation: 'scrollLine 2s ease-in-out infinite' }} />

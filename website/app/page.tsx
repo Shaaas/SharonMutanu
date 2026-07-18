@@ -73,7 +73,7 @@ function WorkPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
           <div className="sect-label anim-fadeIn d1" style={{ marginBottom: '1.5rem' }}><span className="dot" />PORTFOLIO</div>
           <div className="display-section anim-fadeUp d2"><ScrambleText text="SELECTED" delay={200} /></div>
           <div className="display-section text-outline anim-fadeUp d3">WORK</div>
-          <p className="anim-fadeUp d4 font-mono" style={{ marginTop: '2rem', fontSize: '10px', color: '#555', letterSpacing: '.4em', textTransform: 'uppercase', lineHeight: 2 }}>
+          <p className="anim-fadeUp d4 font-mono" style={{ marginTop: '2rem', fontSize: '10px', color: '#aaa', letterSpacing: '.4em', textTransform: 'uppercase', lineHeight: 2 }}>
             {PROJECTS.length} projects across web design, development, e-commerce, SaaS, and strategy.
           </p>
         </div>
@@ -122,9 +122,9 @@ function WorkPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginBottom: '1.1rem' }}>
                 {p.tags.map((t) => <span key={t} className="tag">{t}</span>)}
               </div>
-              <p style={{ color: '#555', fontSize: '.8rem', lineHeight: 1.75, marginBottom: 'auto' }}>{p.desc}</p>
+              <p style={{ color: '#aaa', fontSize: '.8rem', lineHeight: 1.75, marginBottom: 'auto' }}>{p.desc}</p>
               <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span className="font-mono" style={{ fontSize: '8px', color: '#666', letterSpacing: '.2em', textTransform: 'uppercase' }}>{p.category}</span>
+                <span className="font-mono" style={{ fontSize: '8px', color: '#bbb', letterSpacing: '.2em', textTransform: 'uppercase' }}>{p.category}</span>
                 <span className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.2em', textTransform: 'uppercase' }}>VIEW CASE STUDY →</span>
               </div>
             </div>
@@ -155,12 +155,12 @@ function CaseStudyPage({ slug, goTo }: { slug: string; goTo: (p: Page, slug?: st
         <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 0%,${project.color}80 0%,transparent 60%)`, pointerEvents: 'none' }} />
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '40%', background: 'linear-gradient(to bottom,transparent,#050505)', pointerEvents: 'none' }} />
         <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%', position: 'relative' }}>
-          <button onClick={() => goTo('work')} className="font-mono" style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '8px', color: '#555', letterSpacing: '.3em', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', gap: '.5rem', marginBottom: '2.5rem', transition: 'color .2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#2D5BFF')} onMouseLeave={(e) => (e.currentTarget.style.color = '#555')}>← BACK TO WORK</button>
+          <button onClick={() => goTo('work')} className="font-mono" style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '8px', color: '#aaa', letterSpacing: '.3em', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', gap: '.5rem', marginBottom: '2.5rem', transition: 'color .2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#2D5BFF')} onMouseLeave={(e) => (e.currentTarget.style.color = '#555')}>← BACK TO WORK</button>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: '1.25rem' }}>
             {project.tags.map((t) => <span key={t} className="tag">{t}</span>)}
           </div>
           <h1 className="font-bebas" style={{ fontSize: 'clamp(3.5rem,9vw,8rem)', lineHeight: .85, textTransform: 'uppercase', marginBottom: '1.5rem' }}>{project.name}</h1>
-          <p style={{ fontSize: '1.1rem', color: '#888', maxWidth: 560, lineHeight: 1.6 }}>{project.tagline}</p>
+          <p style={{ fontSize: '1.1rem', color: '#bbb', maxWidth: 560, lineHeight: 1.6 }}>{project.tagline}</p>
           <div style={{ display: 'flex', gap: '2.5rem', marginTop: '2.5rem', flexWrap: 'wrap' }}>
             {[['Year', project.year], ['Category', project.category], ['Stack', project.tech.join(' · ')]].map(([l, v]) => (
               <div key={l}>
@@ -228,7 +228,7 @@ function CaseStudyPage({ slug, goTo }: { slug: string; goTo: (p: Page, slug?: st
             <div style={{ background: '#0a0a0a', border: '1px solid rgba(255,255,255,.06)', borderRadius: '1.5rem', padding: '2rem', marginBottom: '2rem' }}>
               <div className="sect-label" style={{ marginBottom: '1.5rem' }}><span className="dot" />TECH STACK</div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '.5rem' }}>
-                {project.tech.map((t) => <span key={t} className="font-mono" style={{ fontSize: '8px', color: '#555', border: '1px solid rgba(255,255,255,.08)', padding: '4px 10px', borderRadius: 999, letterSpacing: '.1em', textTransform: 'uppercase' }}>{t}</span>)}
+                {project.tech.map((t) => <span key={t} className="font-mono" style={{ fontSize: '8px', color: '#aaa', border: '1px solid rgba(255,255,255,.08)', padding: '4px 10px', borderRadius: 999, letterSpacing: '.1em', textTransform: 'uppercase' }}>{t}</span>)}
               </div>
             </div>
             {project.url && (
@@ -277,7 +277,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
               <div className="font-mono" style={{ fontSize: '10px', color: '#2D5BFF', letterSpacing: '.3em', paddingTop: '.5rem' }}>{s.num}</div>
               <div>
                 <h2 className="display-service" style={{ marginBottom: '1.25rem' }}>{s.title}</h2>
-                <p style={{ color: '#999', fontSize: '.9rem', lineHeight: 1.8, maxWidth: 420 }}>{s.desc}</p>
+                <p style={{ color: '#ccc', fontSize: '.9rem', lineHeight: 1.8, maxWidth: 420 }}>{s.desc}</p>
               </div>
               <div>
                 <div className="label-xs" style={{ marginBottom: '1rem' }}>DELIVERABLES</div>
@@ -285,7 +285,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
                   {s.deliverables.map((d) => (
                     <li key={d} style={{ display: 'flex', gap: '.75rem', alignItems: 'center' }}>
                       <span style={{ width: 4, height: 4, borderRadius: '50%', background: '#2D5BFF', flexShrink: 0 }} />
-                      <span className="font-mono" style={{ fontSize: '8.5px', color: '#888', letterSpacing: '.12em', textTransform: 'uppercase' }}>{d}</span>
+                      <span className="font-mono" style={{ fontSize: '8.5px', color: '#bbb', letterSpacing: '.12em', textTransform: 'uppercase' }}>{d}</span>
                     </li>
                   ))}
                 </ul>
@@ -301,7 +301,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
           <div style={{ marginBottom: '3.5rem' }}>
             <div className="sect-label reveal" style={{ marginBottom: '1rem' }}><span className="dot" />TOOLS & TECHNOLOGIES</div>
             <h2 className="display-section reveal"><ScrambleText text="THE TECH STACK" /></h2>
-            <p className="reveal" style={{ color: '#888', fontSize: '.88rem', lineHeight: 1.8, marginTop: '1.25rem', maxWidth: 440 }}>Every tool chosen for performance, scalability, and developer experience. No bloat, no compromise.</p>
+            <p className="reveal" style={{ color: '#bbb', fontSize: '.88rem', lineHeight: 1.8, marginTop: '1.25rem', maxWidth: 440 }}>Every tool chosen for performance, scalability, and developer experience. No bloat, no compromise.</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))', gap: '1rem' }}>
             {TECH_STACK.map((t, i) => (
@@ -320,7 +320,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <div className="sect-label reveal" style={{ justifyContent: 'center', marginBottom: '1rem' }}><span className="dot" />INVESTMENT</div>
             <h2 className="display-section reveal"><ScrambleText text="TRANSPARENT PRICING" /></h2>
-            <p className="reveal" style={{ color: '#888', fontSize: '.85rem', marginTop: '1.25rem', maxWidth: 420, margin: '1.25rem auto 0' }}>No hidden fees, no surprises. Clear packages designed to deliver maximum value at every stage of your growth.</p>
+            <p className="reveal" style={{ color: '#bbb', fontSize: '.85rem', marginTop: '1.25rem', maxWidth: 420, margin: '1.25rem auto 0' }}>No hidden fees, no surprises. Clear packages designed to deliver maximum value at every stage of your growth.</p>
           </div>
           <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: '1.25rem' }}>
             {PRICING.map((plan, i) => (
@@ -329,15 +329,15 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
                 {plan.highlight && <div className="font-mono" style={{ fontSize: '7px', color: '#2D5BFF', letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: '1rem', background: 'rgba(45,91,255,.1)', padding: '4px 10px', borderRadius: 999, width: 'fit-content' }}>MOST POPULAR</div>}
                 <div className="sect-label" style={{ marginBottom: '1rem' }}>{plan.title.toUpperCase()}</div>
                 <div style={{ marginBottom: '.5rem', lineHeight: 1 }}>
-                  <span className="font-bebas" style={{ fontSize: plan.period && plan.period.length > 4 ? '2.5rem' : '3.5rem' }}>{plan.price}</span>
-                  <span className="font-mono" style={{ fontSize: '10px', color: '#777', display: 'block', marginTop: '.25rem' }}>{plan.period}</span>
+                  <span className="font-bebas" style={{ fontSize: plan.price.length > 12 ? '1.8rem' : '3.5rem', lineHeight: 1.1 }}>{plan.price}</span>
+                  <span className="font-mono" style={{ fontSize: '10px', color: '#bbb', display: 'block', marginTop: '.25rem' }}>{plan.period}</span>
                 </div>
-                <p style={{ fontSize: '.78rem', color: '#444', marginBottom: '1.5rem', lineHeight: 1.6 }}>{plan.desc}</p>
+                <p style={{ fontSize: '.78rem', color: '#ccc', marginBottom: '1.5rem', lineHeight: 1.6 }}>{plan.desc}</p>
                 <ul style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '.6rem', marginBottom: '2rem', listStyle: 'none', padding: 0 }}>
                   {plan.features.map((f) => (
                     <li key={f} style={{ display: 'flex', alignItems: 'center', gap: '.6rem' }}>
                       <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#2D5BFF', flexShrink: 0 }} />
-                      <span className="font-mono" style={{ fontSize: '8.5px', color: '#888', letterSpacing: '.12em', textTransform: 'uppercase' }}>{f}</span>
+                      <span className="font-mono" style={{ fontSize: '8.5px', color: '#bbb', letterSpacing: '.12em', textTransform: 'uppercase' }}>{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -373,8 +373,8 @@ function AboutPage({ goTo }: { goTo: (p: Page) => void }) {
             <div className="display-section text-outline anim-fadeUp d3">& THE PERSON</div>
           </div>
           <div className="anim-fadeUp d4">
-            <p style={{ fontSize: '1.05rem', color: '#777', lineHeight: 1.9, marginBottom: '1.5rem' }}>MYSA is a one-person web design and development practice based in Nairobi, Kenya. I work directly with founders, business owners, and marketing teams who need digital infrastructure that actually performs.</p>
-            <p style={{ fontSize: '1.05rem', color: '#555', lineHeight: 1.9 }}>Not an agency. Not a freelancer-with-templates. The quality control and intentionality of a boutique studio, with the speed and directness of working with one person.</p>
+            <p style={{ fontSize: '1.05rem', color: '#bbb', lineHeight: 1.9, marginBottom: '1.5rem' }}>MYSA is a one-person web design and development practice based in Nairobi, Kenya. I work directly with founders, business owners, and marketing teams who need digital infrastructure that actually performs.</p>
+            <p style={{ fontSize: '1.05rem', color: '#aaa', lineHeight: 1.9 }}>Not an agency. Not a freelancer-with-templates. The quality control and intentionality of a boutique studio, with the speed and directness of working with one person.</p>
           </div>
         </div>
       </section>
@@ -388,9 +388,9 @@ function AboutPage({ goTo }: { goTo: (p: Page) => void }) {
           <div className="reveal-right">
             <div className="sect-label" style={{ marginBottom: '1.5rem' }}><span className="dot" />THE PERSON BEHIND THE WORK</div>
             <h2 className="font-bebas" style={{ fontSize: 'clamp(2.5rem,5vw,4rem)', textTransform: 'uppercase', marginBottom: '2rem', lineHeight: .9 }}>Building the web<br /><span style={{ color: '#2D5BFF' }}>from Nairobi.</span></h2>
-            <p style={{ color: '#777', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '1.25rem' }}>I started teaching myself to code in 2019 out of pure curiosity. No bootcamp, no formal training. Just a laptop, a browser, and a stubbornness that turned out to be useful. By 2023 I was building for real clients. By 2024 I had built a full member management platform for one of Nairobi's largest boda boda associations.</p>
-            <p style={{ color: '#777', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '1.25rem' }}>I care about clarity, speed, and restraint. No unnecessary noise. No bloated layouts. Every element should earn its place. I build on Next.js, design in Figma, and integrate real backend systems when the project calls for it.</p>
-            <p style={{ color: '#888', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '2.5rem' }}>When I am not building client projects, I am studying design systems, reading about what is working online, and reworking details most people would never notice. It is a bit obsessive. It works. Some client work is proprietary or under NDA and does not appear in the public portfolio - but I am happy to discuss it on a call.</p>
+            <p style={{ color: '#bbb', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '1.25rem' }}>I started teaching myself to code in 2019 out of pure curiosity. No bootcamp, no formal training. Just a laptop, a browser, and a stubbornness that turned out to be useful. By 2023 I was building for real clients. By 2024 I had built a full member management platform for one of Nairobi's largest boda boda associations.</p>
+            <p style={{ color: '#bbb', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '1.25rem' }}>I care about clarity, speed, and restraint. No unnecessary noise. No bloated layouts. Every element should earn its place. I build on Next.js, design in Figma, and integrate real backend systems when the project calls for it.</p>
+            <p style={{ color: '#bbb', fontSize: '.9rem', lineHeight: 1.9, marginBottom: '2.5rem' }}>When I am not building client projects, I am studying design systems, reading about what is working online, and reworking details most people would never notice. It is a bit obsessive. It works. Some client work is proprietary or under NDA and does not appear in the public portfolio - but I am happy to discuss it on a call.</p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <button className="btn btn-primary" onClick={() => goTo('contact')}><span className="btn-inner">WORK WITH ME</span></button>
               <button className="btn" onClick={() => goTo('work')}><span className="btn-inner">SEE MY WORK</span></button>
@@ -409,7 +409,7 @@ function AboutPage({ goTo }: { goTo: (p: Page) => void }) {
               <div key={v.title} className="reveal-scale" style={{ transitionDelay: `${i * .08}s`, background: '#0a0a0a', border: '1px solid rgba(255,255,255,.06)', borderRadius: '1.5rem', padding: '2rem' }}>
                 <div className="label-xs" style={{ color: '#2D5BFF', marginBottom: '.75rem' }}>{v.num}</div>
                 <h3 className="font-bebas" style={{ fontSize: '1.6rem', textTransform: 'uppercase', marginBottom: '.75rem' }}>{v.title}</h3>
-                <p style={{ color: '#888', fontSize: '.82rem', lineHeight: 1.8 }}>{v.body}</p>
+                <p style={{ color: '#bbb', fontSize: '.82rem', lineHeight: 1.8 }}>{v.body}</p>
               </div>
             ))}
           </div>
@@ -431,7 +431,7 @@ function AboutPage({ goTo }: { goTo: (p: Page) => void }) {
                 </div>
                 <div style={{ paddingTop: '.15rem' }}>
                   <h3 className="font-bebas" style={{ fontSize: '1.5rem', textTransform: 'uppercase', marginBottom: '.5rem' }}>{item.title}</h3>
-                  <p style={{ color: '#888', fontSize: '.85rem', lineHeight: 1.8 }}>{item.body}</p>
+                  <p style={{ color: '#bbb', fontSize: '.85rem', lineHeight: 1.8 }}>{item.body}</p>
                 </div>
               </div>
             ))}
@@ -457,7 +457,7 @@ function BlogPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
           <div className="sect-label anim-fadeIn d1" style={{ marginBottom: '1.5rem' }}><span className="dot" />INSIGHTS</div>
           <div className="display-section anim-fadeUp d2"><ScrambleText text="BLOG" delay={200} /></div>
           <div className="display-section text-outline anim-fadeUp d3">& THINKING</div>
-          <p className="anim-fadeUp d4 font-mono" style={{ marginTop: '2rem', fontSize: '10px', color: '#555', letterSpacing: '.4em', textTransform: 'uppercase', lineHeight: 2 }}>Design, development, business strategy.<br />Things worth writing down.</p>
+          <p className="anim-fadeUp d4 font-mono" style={{ marginTop: '2rem', fontSize: '10px', color: '#aaa', letterSpacing: '.4em', textTransform: 'uppercase', lineHeight: 2 }}>Design, development, business strategy.<br />Things worth writing down.</p>
         </div>
       </section>
       <div style={{ padding: '0 2.5rem 3rem', borderBottom: '1px solid rgba(255,255,255,.06)' }}>
@@ -477,13 +477,13 @@ function BlogPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
             >
               <div style={{ background: '#111', borderRadius: '1.25rem', aspectRatio: '16/9', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(45,91,255,.12) 0%,transparent 60%)' }} />
-                <div className="font-mono" style={{ fontSize: '8px', color: '#2a2a2a', letterSpacing: '.3em', position: 'relative' }}>FEATURED</div>
+                <div className="font-mono" style={{ fontSize: '8px', color: '#777', letterSpacing: '.3em', position: 'relative' }}>FEATURED</div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <div style={{ display: 'flex', gap: '.75rem', marginBottom: '1.25rem', alignItems: 'center' }}><span className="tag">{filtered[0].cat}</span><span className="font-mono" style={{ fontSize: '7px', color: '#666', letterSpacing: '.2em' }}>FEATURED</span></div>
+                <div style={{ display: 'flex', gap: '.75rem', marginBottom: '1.25rem', alignItems: 'center' }}><span className="tag">{filtered[0].cat}</span><span className="font-mono" style={{ fontSize: '7px', color: '#bbb', letterSpacing: '.2em' }}>FEATURED</span></div>
                 <h2 className="font-bebas" style={{ fontSize: 'clamp(1.8rem,3vw,2.8rem)', textTransform: 'uppercase', marginBottom: '1rem', lineHeight: 1 }}>{filtered[0].title}</h2>
-                <p style={{ color: '#888', fontSize: '.85rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>{filtered[0].excerpt}</p>
-                <div style={{ display: 'flex', gap: '1.5rem' }}><span className="font-mono" style={{ fontSize: '8px', color: '#666', letterSpacing: '.2em' }}>{filtered[0].date}</span><span className="font-mono" style={{ fontSize: '8px', color: '#666', letterSpacing: '.2em' }}>{filtered[0].readTime}</span></div>
+                <p style={{ color: '#bbb', fontSize: '.85rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>{filtered[0].excerpt}</p>
+                <div style={{ display: 'flex', gap: '1.5rem' }}><span className="font-mono" style={{ fontSize: '8px', color: '#bbb', letterSpacing: '.2em' }}>{filtered[0].date}</span><span className="font-mono" style={{ fontSize: '8px', color: '#bbb', letterSpacing: '.2em' }}>{filtered[0].readTime}</span></div>
                 <div style={{ marginTop: '1.5rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#2D5BFF', letterSpacing: '.2em', textTransform: 'uppercase' }}>READ ARTICLE →</div>
               </div>
             </div>
@@ -493,13 +493,13 @@ function BlogPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
               <div key={post.slug} className="blog-card reveal" style={{ transitionDelay: `${i * .06}s` }} onClick={() => goTo('blog-post', post.slug)}>
                 <div style={{ background: '#111', borderRadius: '.75rem', aspectRatio: '16/9', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
                   <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg,rgba(45,91,255,.08) 0%,transparent 60%)' }} />
-                  <div className="font-mono" style={{ fontSize: '7px', color: '#1e1e1e', letterSpacing: '.3em', position: 'relative' }}>{post.cat}</div>
+                  <div className="font-mono" style={{ fontSize: '7px', color: '#666', letterSpacing: '.3em', position: 'relative' }}>{post.cat}</div>
                 </div>
-                <div style={{ display: 'flex', gap: '.75rem', marginBottom: '1rem', alignItems: 'center' }}><span className="tag">{post.cat}</span><span className="font-mono" style={{ fontSize: '7px', color: '#2a2a2a', letterSpacing: '.2em' }}>{post.readTime}</span></div>
+                <div style={{ display: 'flex', gap: '.75rem', marginBottom: '1rem', alignItems: 'center' }}><span className="tag">{post.cat}</span><span className="font-mono" style={{ fontSize: '7px', color: '#777', letterSpacing: '.2em' }}>{post.readTime}</span></div>
                 <h2 className="font-bebas" style={{ fontSize: '1.6rem', textTransform: 'uppercase', marginBottom: '.75rem', lineHeight: 1.05 }}>{post.title}</h2>
-                <p style={{ color: '#555', fontSize: '.8rem', lineHeight: 1.7, marginBottom: 'auto' }}>{post.excerpt}</p>
+                <p style={{ color: '#aaa', fontSize: '.8rem', lineHeight: 1.7, marginBottom: 'auto' }}>{post.excerpt}</p>
                 <div style={{ marginTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span className="font-mono" style={{ fontSize: '7px', color: '#2a2a2a', letterSpacing: '.2em' }}>{post.date}</span>
+                  <span className="font-mono" style={{ fontSize: '7px', color: '#777', letterSpacing: '.2em' }}>{post.date}</span>
                   <span className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.2em' }}>READ →</span>
                 </div>
               </div>
@@ -524,26 +524,26 @@ function BlogPostPage({ slug, goTo }: { slug: string; goTo: (p: Page, s?: string
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 400, background: 'radial-gradient(ellipse at 50% -20%,rgba(45,91,255,.1) 0%,transparent 65%)', pointerEvents: 'none' }} />
         <div style={{ maxWidth: 800, margin: '0 auto', position: 'relative' }}>
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            <button onClick={() => goTo('blog')} className="font-mono" style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '8px', color: '#555', letterSpacing: '.3em', textTransform: 'uppercase', transition: 'color .2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#2D5BFF')} onMouseLeave={(e) => (e.currentTarget.style.color = '#555')}>← BLOG</button>
+            <button onClick={() => goTo('blog')} className="font-mono" style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '8px', color: '#aaa', letterSpacing: '.3em', textTransform: 'uppercase', transition: 'color .2s' }} onMouseEnter={(e) => (e.currentTarget.style.color = '#2D5BFF')} onMouseLeave={(e) => (e.currentTarget.style.color = '#555')}>← BLOG</button>
             <span className="tag">{post.cat}</span>
           </div>
           <h1 className="font-bebas" style={{ fontSize: 'clamp(2.5rem,7vw,6rem)', textTransform: 'uppercase', lineHeight: .9, marginBottom: '2rem' }}>{post.title}</h1>
           <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
-            <span className="font-mono" style={{ fontSize: '8px', color: '#444', letterSpacing: '.2em' }}>{post.date}</span>
-            <span className="font-mono" style={{ fontSize: '8px', color: '#444', letterSpacing: '.2em' }}>{post.readTime}</span>
+            <span className="font-mono" style={{ fontSize: '8px', color: '#ccc', letterSpacing: '.2em' }}>{post.date}</span>
+            <span className="font-mono" style={{ fontSize: '8px', color: '#ccc', letterSpacing: '.2em' }}>{post.readTime}</span>
           </div>
         </div>
       </section>
       <article className="page-section">
         <div style={{ maxWidth: 740, margin: '0 auto' }}>
-          <p style={{ fontSize: '1.1rem', color: '#888', lineHeight: 1.8, marginBottom: '3rem', fontStyle: 'italic', borderLeft: '2px solid #2D5BFF', paddingLeft: '1.5rem' }}>{post.excerpt}</p>
+          <p style={{ fontSize: '1.1rem', color: '#bbb', lineHeight: 1.8, marginBottom: '3rem', fontStyle: 'italic', borderLeft: '2px solid #2D5BFF', paddingLeft: '1.5rem' }}>{post.excerpt}</p>
           <BlogContent text={post.content} />
           <div style={{ borderTop: '1px solid rgba(255,255,255,.06)', margin: '4rem 0 3rem' }} />
           <div className="two-col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', alignItems: 'center' }}>
             <div>
               <div className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.3em', marginBottom: '.5rem' }}>WRITTEN BY</div>
               <div className="font-bebas" style={{ fontSize: '1.5rem', textTransform: 'uppercase' }}>MYSA</div>
-              <div className="font-mono" style={{ fontSize: '8px', color: '#444', letterSpacing: '.2em', marginTop: '.25rem' }}>NAIROBI, KENYA</div>
+              <div className="font-mono" style={{ fontSize: '8px', color: '#ccc', letterSpacing: '.2em', marginTop: '.25rem' }}>NAIROBI, KENYA</div>
             </div>
             <div style={{ textAlign: 'right' }}><button className="btn btn-primary" onClick={() => goTo('contact')}><span className="btn-inner">START A PROJECT</span></button></div>
           </div>
@@ -572,7 +572,7 @@ function FAQPage({ goTo }: { goTo: (p: Page) => void }) {
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <div className="sect-label anim-fadeIn d1" style={{ marginBottom: '1.5rem' }}><span className="dot" />QUESTIONS</div>
           <div className="display-hero anim-fadeUp d2"><ScrambleText text="FAQ" delay={200} /></div>
-          <p className="anim-fadeUp d3 font-mono" style={{ marginTop: '2rem', fontSize: '10px', color: '#555', letterSpacing: '.4em', textTransform: 'uppercase', lineHeight: 2 }}>Everything you need to know before we start working together.</p>
+          <p className="anim-fadeUp d3 font-mono" style={{ marginTop: '2rem', fontSize: '10px', color: '#aaa', letterSpacing: '.4em', textTransform: 'uppercase', lineHeight: 2 }}>Everything you need to know before we start working together.</p>
         </div>
       </section>
       <section className="page-section section-divider">
@@ -589,7 +589,7 @@ function FAQPage({ goTo }: { goTo: (p: Page) => void }) {
           <div className="reveal" style={{ background: '#0f0f0f', border: '1px solid rgba(45,91,255,.25)', borderRadius: '2rem', padding: '3rem', textAlign: 'center', marginTop: '2rem' }}>
             <div className="sect-label" style={{ justifyContent: 'center', marginBottom: '1rem' }}><span className="dot" />STILL HAVE QUESTIONS?</div>
             <h2 className="font-bebas" style={{ fontSize: 'clamp(2rem,5vw,3.5rem)', textTransform: 'uppercase', marginBottom: '1rem', lineHeight: 1 }}>Just ask directly.</h2>
-            <p style={{ color: '#888', fontSize: '.88rem', lineHeight: 1.8, maxWidth: 360, margin: '0 auto 2rem' }}>I respond to every inquiry personally, usually within 24 hours.</p>
+            <p style={{ color: '#bbb', fontSize: '.88rem', lineHeight: 1.8, maxWidth: 360, margin: '0 auto 2rem' }}>I respond to every inquiry personally, usually within 24 hours.</p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <button className="btn btn-primary" onClick={() => goTo('contact')}><span className="btn-inner">SEND A MESSAGE</span></button>
               <a href="mailto:mutanu.sharon@yahoo.com" className="btn"><span className="btn-inner">EMAIL DIRECTLY</span></a>
@@ -615,12 +615,12 @@ function ContactPage() {
             <div className="anim-fadeUp d3" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(4rem,12vw,10rem)', lineHeight: .82, letterSpacing: '-.02em', textTransform: 'uppercase', color: 'transparent', WebkitTextStroke: '1.5px rgba(255,255,255,.17)' }}>TOGETHER.</div>
           </div>
           <div className="anim-fadeUp d4">
-            <p style={{ fontSize: '1rem', color: '#666', lineHeight: 1.9, marginBottom: '2.5rem' }}>Have a project in mind? Fill out the form and I will get back to you within 24 hours with a custom proposal. No sales call required, no commitment to proceed.</p>
+            <p style={{ fontSize: '1rem', color: '#bbb', lineHeight: 1.9, marginBottom: '2.5rem' }}>Have a project in mind? Fill out the form and I will get back to you within 24 hours with a custom proposal. No sales call required, no commitment to proceed.</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               {[{ label: 'Email', value: 'mutanu.sharon@yahoo.com' }, { label: 'Location', value: 'Nairobi, Kenya' }, { label: 'Response Time', value: 'Within 24 hours' }, { label: 'Availability', value: 'Open to new projects' }].map((item) => (
                 <div key={item.label} style={{ display: 'flex', gap: '1.5rem', alignItems: 'baseline' }}>
                   <span className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.3em', textTransform: 'uppercase', minWidth: 100 }}>{item.label}</span>
-                  <span style={{ fontSize: '.85rem', color: '#777' }}>{item.value}</span>
+                  <span style={{ fontSize: '.85rem', color: '#bbb' }}>{item.value}</span>
                 </div>
               ))}
             </div>
@@ -636,7 +636,7 @@ function ContactPage() {
                 <div style={{ width: 36, height: 36, border: '1px solid rgba(45,91,255,.3)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#2D5BFF', letterSpacing: '.1em' }}>{item.s}</div>
                 <div>
                   <h3 className="font-bebas" style={{ fontSize: '1.3rem', textTransform: 'uppercase', marginBottom: '.4rem' }}>{item.title}</h3>
-                  <p style={{ color: '#888', fontSize: '.82rem', lineHeight: 1.7 }}>{item.body}</p>
+                  <p style={{ color: '#bbb', fontSize: '.82rem', lineHeight: 1.7 }}>{item.body}</p>
                 </div>
               </div>
             ))}
@@ -724,7 +724,7 @@ export default function MysaStudio() {
 </ul>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-          <div className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '.5rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#444', letterSpacing: '.2em' }}>
+          <div className="hide-mobile" style={{ display: 'flex', alignItems: 'center', gap: '.5rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#ccc', letterSpacing: '.2em' }}>
             <span className="dot" />ONLINE
           </div>
           <button className="btn btn-primary btn-sm hide-mobile" onClick={() => goTo('contact')}><span className="btn-inner">Start a Project</span></button>

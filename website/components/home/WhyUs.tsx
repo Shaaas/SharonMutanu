@@ -87,10 +87,10 @@ export function WhyUs() {
                 <div style={{ width: 44, height: 44, borderRadius: '10px', background: 'rgba(45,91,255,.1)', border: '1px solid rgba(45,91,255,.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   {item.icon}
                 </div>
-                <span className="font-mono" style={{ fontSize: '9px', color: '#333', letterSpacing: '.2em' }}>{item.num}</span>
+                <span className="font-mono" style={{ fontSize: '9px', color: '#888', letterSpacing: '.2em' }}>{item.num}</span>
               </div>
               <h3 className="font-bebas" style={{ fontSize: '1.6rem', letterSpacing: '.02em', textTransform: 'uppercase', color: '#fff' }}>{item.title}</h3>
-              <p style={{ color: '#888', fontSize: '.85rem', lineHeight: 1.8, margin: 0 }}>{item.body}</p>
+              <p style={{ color: '#bbb', fontSize: '.85rem', lineHeight: 1.8, margin: 0 }}>{item.body}</p>
             </div>
           ))}
         </div>

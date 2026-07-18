@@ -35,7 +35,7 @@ export function FeaturedWork({ goTo }: Props) {
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginBottom: '1.1rem' }}>
                 {p.tags.slice(0, 2).map((t) => <span key={t} className="tag">{t}</span>)}
               </div>
-              <p style={{ color: '#555', fontSize: '.8rem', lineHeight: 1.75, marginBottom: 'auto' }}>{p.desc}</p>
+              <p style={{ color: '#aaa', fontSize: '.8rem', lineHeight: 1.75, marginBottom: 'auto' }}>{p.desc}</p>
               <div style={{ marginTop: '1.75rem', fontFamily: 'var(--font-mono)', fontSize: '8px', color: '#2D5BFF', letterSpacing: '.2em', textTransform: 'uppercase' }}>
                 VIEW CASE STUDY →
               </div>

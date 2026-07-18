@@ -19,8 +19,8 @@ export const PRICING: PricingPlan[] = [
   },
   {
     title: 'Digital Platform',
-    price: 'KSh 150,000',
-    period: ' - 400,000+',
+    price: 'KSh 150,000 - 400,000+',
+    period: '',
     desc: 'SACCO systems, delivery apps, member portals, payment platforms, and full-stack digital infrastructure.',
     features: ['Custom scoped build', 'Backend and database', 'M-Pesa and payment integration', 'Admin dashboard', 'Authentication and roles', 'Source code licensed to MYSA Builds', 'Monthly subscription required'],
     highlight: false,

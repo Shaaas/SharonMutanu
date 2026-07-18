@@ -72,7 +72,7 @@ export function ContactForm() {
     <div className="anim-scaleIn" style={{ textAlign: 'center', padding: '3rem 0' }}>
       <div style={{ width: 60, height: 60, border: '1.5px solid #2D5BFF', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem', fontSize: '1.25rem' }}>✓</div>
       <div className="font-bebas" style={{ fontSize: '2rem', color: '#2D5BFF', marginBottom: '.75rem', textTransform: 'uppercase', letterSpacing: '.02em' }}>TRANSMISSION RECEIVED</div>
-      <p className="font-mono" style={{ fontSize: '9px', color: '#444', letterSpacing: '.3em', textTransform: 'uppercase', lineHeight: 2 }}>I'll be in touch within 24 hours.</p>
+      <p className="font-mono" style={{ fontSize: '9px', color: '#ccc', letterSpacing: '.3em', textTransform: 'uppercase', lineHeight: 2 }}>I'll be in touch within 24 hours.</p>
     </div>
   );
 
@@ -83,14 +83,14 @@ export function ContactForm() {
           <div key={i} style={{ flex: 1, height: 2, borderRadius: 1, background: i <= step ? '#2D5BFF' : 'rgba(255,255,255,.07)', transition: 'background .4s' }} />
         ))}
       </div>
-      <div className="font-mono" style={{ fontSize: '8px', color: '#666', letterSpacing: '.3em', marginBottom: '1.75rem' }}>
+      <div className="font-mono" style={{ fontSize: '8px', color: '#bbb', letterSpacing: '.3em', marginBottom: '1.75rem' }}>
         STEP {step + 1} / {FIELDS.length}
       </div>
       <div key={formKey} className={dir === 'right' ? 'anim-slideR' : 'anim-slideL'} style={{ minHeight: 180 }}>
         <label
           htmlFor={`f-${f.key}`}
           className="font-mono"
-          style={{ display: 'block', fontSize: '9px', color: '#888', letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: '.75rem' }}
+          style={{ display: 'block', fontSize: '9px', color: '#bbb', letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: '.75rem' }}
         >
           {f.label} // INPUT
         </label>

@@ -50,7 +50,7 @@ export function ServicesPreview({ goTo }: Props) {
             <div className="font-bebas" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.8rem)', textTransform: 'uppercase', marginBottom: '.35rem' }}>
               UBTA — Member Management Platform
             </div>
-            <p className="font-mono" style={{ fontSize: '8px', color: '#555', letterSpacing: '.15em', textTransform: 'uppercase', lineHeight: 1.8 }}>
+            <p className="font-mono" style={{ fontSize: '8px', color: '#aaa', letterSpacing: '.15em', textTransform: 'uppercase', lineHeight: 1.8 }}>
               3,900+ riders · M-Pesa payments · Admin portal · Certificate generation · Supabase backend
             </p>
           </div>

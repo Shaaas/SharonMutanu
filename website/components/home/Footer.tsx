@@ -38,7 +38,7 @@ export function Footer({ goTo }: Props) {
               </div>
               <span className="font-mono" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '.45em', color: '#fff', textTransform: 'uppercase' }}>MYSA</span>
             </button>
-            <p style={{ color: '#444', fontSize: '.82rem', lineHeight: 1.8, maxWidth: 280 }}>
+            <p style={{ color: '#ccc', fontSize: '.82rem', lineHeight: 1.8, maxWidth: 280 }}>
               Architecting high-fidelity digital infrastructure for ambitious businesses. Based in Nairobi, working globally.
             </p>
             <button
@@ -58,7 +58,7 @@ export function Footer({ goTo }: Props) {
                 <li key={label}>
                   <button
                     onClick={() => goTo(page)}
-                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '.82rem', color: '#444', transition: 'color .2s', fontFamily: 'inherit' }}
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '.82rem', color: '#ccc', transition: 'color .2s', fontFamily: 'inherit' }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = '#444')}
                   >
@@ -77,7 +77,7 @@ export function Footer({ goTo }: Props) {
                 <li key={s.label}>
                   <a
                     href={s.url} target="_blank" rel="noopener noreferrer"
-                    style={{ fontSize: '.82rem', color: '#444', textDecoration: 'none', transition: 'color .2s' }}
+                    style={{ fontSize: '.82rem', color: '#ccc', textDecoration: 'none', transition: 'color .2s' }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = '#444')}
                   >
@@ -90,7 +90,7 @@ export function Footer({ goTo }: Props) {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,.05)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-          <span className="font-mono" style={{ fontSize: '8px', color: '#444', letterSpacing: '.3em', textTransform: 'uppercase' }}>© 2025 MYSA - NAIROBI, KENYA</span>
+          <span className="font-mono" style={{ fontSize: '8px', color: '#ccc', letterSpacing: '.3em', textTransform: 'uppercase' }}>© 2025 MYSA - NAIROBI, KENYA</span>
         </div>
       </div>
     </footer>
