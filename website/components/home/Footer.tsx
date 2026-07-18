@@ -8,18 +8,20 @@ interface Props {
 }
 
 const FOOTER_LINKS: { label: string; page: Page }[] = [
-  { label: 'Work',     page: 'work'    },
-  { label: 'Services', page: 'services'},
-  { label: 'About',    page: 'about'   },
-  { label: 'Blog',     page: 'blog'    },
-  { label: 'FAQ',      page: 'faq'     },
-  { label: 'Contact',  page: 'contact' },
+  { label: 'Work',     page: 'work'     },
+  { label: 'Services', page: 'services' },
+  { label: 'About',    page: 'about'    },
+  { label: 'Blog',     page: 'blog'     },
+  { label: 'FAQ',      page: 'faq'      },
+  { label: 'Contact',  page: 'contact'  },
 ];
 
 const SOCIALS = [
+  { label: 'Instagram',   url: 'https://www.instagram.com/sha.ta.nu/' },
   { label: 'Twitter / X', url: 'https://x.com/Sharon_Mutan' },
   { label: 'LinkedIn',    url: 'https://www.linkedin.com/in/sharonmutanu/' },
-  { label: 'Instagram',   url: 'https://www.instagram.com/sha.ta.nu/' },
+  { label: 'GitHub',      url: 'https://github.com/Shaaas' },
+  { label: 'Writing',     url: 'https://sharonlivingcanvas.netlify.app/' },
 ];
 
 export function Footer({ goTo }: Props) {
@@ -27,6 +29,7 @@ export function Footer({ goTo }: Props) {
     <footer style={{ borderTop: '1px solid rgba(255,255,255,.06)', padding: '4rem 2.5rem 2.5rem', background: '#050505' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gap: '4rem', marginBottom: '4rem' }} className="three-col">
+
           {/* Brand */}
           <div>
             <button
@@ -36,15 +39,19 @@ export function Footer({ goTo }: Props) {
               <div style={{ width: 28, height: 28, border: '1.5px solid #2D5BFF', borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ width: 10, height: 10, background: '#2D5BFF', borderRadius: 2 }} />
               </div>
-              <span className="font-mono" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '.45em', color: '#fff', textTransform: 'uppercase' }}>MYSA</span>
+              <span className="font-mono" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '.45em', color: '#fff', textTransform: 'uppercase' }}>MYSA BUILDS</span>
             </button>
-            <p style={{ color: '#ccc', fontSize: '.82rem', lineHeight: 1.8, maxWidth: 280 }}>
-              Architecting high-fidelity digital infrastructure for ambitious businesses. Based in Nairobi, working globally.
+            <p style={{ color: '#bbb', fontSize: '.82rem', lineHeight: 1.8, maxWidth: 280 }}>
+              Websites, platforms, and digital systems built to perform. Based in Nairobi, working globally.
             </p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '.5rem', marginTop: '1.25rem' }}>
+              <span className="dot" />
+              <span className="font-mono" style={{ fontSize: '8px', color: '#2D5BFF', letterSpacing: '.3em', textTransform: 'uppercase' }}>Available for projects</span>
+            </div>
             <button
               onClick={() => goTo('contact')}
               className="font-mono"
-              style={{ background: 'none', border: 'none', cursor: 'pointer', marginTop: '1.5rem', fontSize: '9px', color: '#2D5BFF', letterSpacing: '.3em', textTransform: 'uppercase', borderBottom: '1px solid rgba(45,91,255,.35)', paddingBottom: 2 }}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', marginTop: '1rem', fontSize: '9px', color: '#2D5BFF', letterSpacing: '.3em', textTransform: 'uppercase', borderBottom: '1px solid rgba(45,91,255,.35)', paddingBottom: 2 }}
             >
               START A PROJECT →
             </button>
@@ -58,9 +65,9 @@ export function Footer({ goTo }: Props) {
                 <li key={label}>
                   <button
                     onClick={() => goTo(page)}
-                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '.82rem', color: '#ccc', transition: 'color .2s', fontFamily: 'inherit' }}
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '.82rem', color: '#bbb', transition: 'color .2s', fontFamily: 'inherit' }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = '#444')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#bbb')}
                   >
                     {label}
                   </button>
@@ -75,11 +82,11 @@ export function Footer({ goTo }: Props) {
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '.75rem' }}>
               {SOCIALS.map((s) => (
                 <li key={s.label}>
-                  <a
+                  
                     href={s.url} target="_blank" rel="noopener noreferrer"
-                    style={{ fontSize: '.82rem', color: '#ccc', textDecoration: 'none', transition: 'color .2s' }}
+                    style={{ fontSize: '.82rem', color: '#bbb', textDecoration: 'none', transition: 'color .2s' }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = '#444')}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '#bbb')}
                   >
                     {s.label}
                   </a>
@@ -90,7 +97,8 @@ export function Footer({ goTo }: Props) {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,.05)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-          <span className="font-mono" style={{ fontSize: '8px', color: '#ccc', letterSpacing: '.3em', textTransform: 'uppercase' }}>© 2025 MYSA - NAIROBI, KENYA</span>
+          <span className="font-mono" style={{ fontSize: '8px', color: '#aaa', letterSpacing: '.3em', textTransform: 'uppercase' }}>© 2026 MYSA Builds - Nairobi, Kenya</span>
+          <span className="font-mono" style={{ fontSize: '8px', color: '#444', letterSpacing: '.2em', textTransform: 'uppercase' }}>Built by Sharon Mutanu</span>
         </div>
       </div>
     </footer>
