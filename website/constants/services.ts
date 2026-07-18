@@ -38,10 +38,24 @@ export const SERVICES: Service[] = [
   },
   {
     num: '06',
+    title: 'Brand Identity & Logo Design',
+    short: 'Look the part from day one.',
+    desc: 'A strong brand is more than a logo. I design visual identities that communicate clearly, build trust, and scale across digital and print. Every element considered, nothing generic.',
+    deliverables: ['Logo design and variations', 'Colour palette and typography', 'Brand style guide', 'Social media kit', 'Business card and print assets'],
+  },
+  {
+    num: '07',
+    title: 'Social Media Management',
+    short: 'Consistent presence, strategic content.',
+    desc: 'Your social media should work as hard as your website. I manage content creation, scheduling, and community engagement for businesses that want to show up consistently without doing it themselves.',
+    deliverables: ['Content calendar and strategy', 'Post design and copywriting', 'Scheduling and publishing', 'Monthly performance report', 'Community engagement'],
+  },
+  {
+    num: '08',
     title: 'Maintenance & Support',
     short: 'Ongoing partnership, zero stress.',
     desc: 'Your website is a living business asset. Monthly retainer packages cover updates, performance monitoring, and direct access to me when you need it.',
-    deliverables: ['Monthly content updates', 'Performance & security monitoring', 'Priority support', 'Monthly report'],
+    deliverables: ['Monthly content updates', 'Performance and security monitoring', 'Priority support', 'Monthly report'],
   },
 ];
 
@@ -83,10 +97,11 @@ export const TESTIMONIALS = [
 ];
 
 export const TIMELINE = [
-  { year: '2019', title: 'First Lines of Code',   body: 'Started learning web development out of frustration with how bad most websites looked. Built my first site for a local restaurant - for free, just for the experience.' },
-  { year: '2020', title: 'First Paid Project',     body: 'Landed a $150 freelance job. Spent 3× the estimated time on it. Learned more in those weeks than in months of tutorials.' },
-  { year: '2021', title: 'Going Deeper',           body: 'Committed fully to the craft. Studied design systems, performance engineering, and conversion optimisation. Built obsessively.' },
-  { year: '2022', title: 'MYSA Founded',           body: 'Formalised the practice. Started taking on clients with intention - fewer projects, done properly. Quality over quantity.' },
-  { year: '2023', title: 'Building Reputation',    body: 'First international clients. First SaaS project. First featured mention. The work started speaking for itself.' },
-  { year: '2024', title: 'Now',                    body: 'Working with ambitious businesses across Kenya and globally. Still obsessed with the craft. Still building things that matter.' },
+  { year: '2019', title: 'The Beginning', body: 'Started teaching myself to code. No formal training, just curiosity and a lot of late nights. HTML, CSS, then JavaScript. The learning curve was steep but the pull was stronger.' },
+  { year: '2020', title: 'Getting Serious', body: 'Moved beyond tutorials and started building real things. Experimented with React, fell in love with Next.js, and began to understand the difference between code that works and code that is built well.' },
+  { year: '2021', title: 'Design Meets Development', body: 'Realised that building technically was not enough. Started studying design systems, typography, and conversion principles. The goal shifted from making things work to making things work beautifully.' },
+  { year: '2022', title: 'Building the Foundation', body: 'Took on smaller projects to sharpen the process. Learned how to scope, communicate with clients, and deliver on time. Every project was a lesson in something.' },
+  { year: '2023', title: 'First Paid Work', body: 'Landed the first paying clients and delivered real projects for real businesses. Built portfolios, business sites, and tools for clients who trusted me with something that mattered to them.' },
+  { year: '2024', title: 'MYSA Builds', body: 'Formalised the practice under MYSA Builds. Started taking on more complex work - platforms, admin systems, payment integrations. Built UBTA, a full member management platform serving 3,900+ riders across Kenya.' },
+  { year: '2025', title: 'Now', body: 'Working with businesses across Kenya and beyond. The focus is on quality over quantity - fewer projects, done properly, built to last. Still obsessed with the craft. Still learning every day.' },
 ];

@@ -7,7 +7,7 @@ const FIELDS: { label: string; key: FormKey; type: string; placeholder?: string;
   { label: 'Name',             key: 'name',        type: 'text',     placeholder: 'Your full name' },
   { label: 'Email',            key: 'email',       type: 'email',    placeholder: 'email@example.com' },
   { label: 'Company / Brand',  key: 'company',     type: 'text',     placeholder: 'Company or brand name' },
-  { label: 'Project Type',     key: 'projectType', type: 'select',   options: ['Website', 'Landing Page', 'Redesign', 'E-Commerce', 'Web App'] },
+  { label: 'Project Type',     key: 'projectType', type: 'select',   options: ['Website', 'Landing Page', 'Redesign', 'E-Commerce', 'Web App / Platform', 'SACCO System', 'Delivery App', 'Brand Identity / Logo', 'Social Media Management'] },
   { label: 'Budget',           key: 'budget',      type: 'select',   options: ['$350+', '$750+', '$1200+', "Let's discuss"] },
   { label: 'Project Details',  key: 'details',     type: 'textarea', placeholder: 'Tell me about your project, goals, and timeline...' },
 ];
