@@ -135,7 +135,7 @@ export const PROJECTS: Project[] = [
     year: '2025',
     category: 'Creative Platform',
     color: '#2a1a3a',
-    image: '',
+    image: '/sharon-canvas-preview.png',
   },
   {
     slug: 'liyai-maina',
