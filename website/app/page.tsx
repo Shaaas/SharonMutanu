@@ -329,8 +329,8 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
                 {plan.highlight && <div className="font-mono" style={{ fontSize: '7px', color: '#2D5BFF', letterSpacing: '.3em', textTransform: 'uppercase', marginBottom: '1rem', background: 'rgba(45,91,255,.1)', padding: '4px 10px', borderRadius: 999, width: 'fit-content' }}>MOST POPULAR</div>}
                 <div className="sect-label" style={{ marginBottom: '1rem' }}>{plan.title.toUpperCase()}</div>
                 <div style={{ marginBottom: '.5rem', lineHeight: 1 }}>
-                  <span className="font-bebas" style={{ fontSize: '3.5rem' }}>{plan.price}</span>
-                  <span className="font-mono" style={{ fontSize: '11px', color: '#555' }}>{plan.period}</span>
+                  <span className="font-bebas" style={{ fontSize: plan.period && plan.period.length > 4 ? '2.5rem' : '3.5rem' }}>{plan.price}</span>
+                  <span className="font-mono" style={{ fontSize: '10px', color: '#777', display: 'block', marginTop: '.25rem' }}>{plan.period}</span>
                 </div>
                 <p style={{ fontSize: '.78rem', color: '#444', marginBottom: '1.5rem', lineHeight: 1.6 }}>{plan.desc}</p>
                 <ul style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '.6rem', marginBottom: '2rem', listStyle: 'none', padding: 0 }}>
@@ -342,7 +342,7 @@ function ServicesPage({ goTo }: { goTo: (p: Page) => void }) {
                   ))}
                 </ul>
                 <button className={`btn${plan.highlight ? ' btn-primary' : ''}`} style={{ width: '100%' }} onClick={() => goTo('contact')}>
-                  <span className="btn-inner">Initialize</span>
+                  <span className="btn-inner">Get Started</span>
                 </button>
               </div>
             ))}
