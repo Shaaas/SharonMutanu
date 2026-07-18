@@ -79,14 +79,16 @@ export function Footer({ goTo }: Props) {
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '.75rem' }}>
               {SOCIALS.map((s) => (
                 <li key={s.label}>
-                  
+                  <a
                     href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ fontSize: '.82rem', color: '#bbb', textDecoration: 'none', transition: 'color .2s' }}
                     onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#fff'; }}
                     onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = '#bbb'; }}
-                  >{s.label}</a>
+                  >
+                    {s.label}
+                  </a>
                 </li>
               ))}
             </ul>
