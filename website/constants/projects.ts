@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
   {
   slug: 'ubta',
   name: 'United Boda Transport Association',
-  url: 'https://www.ubta.co.ke/',
+  url: 'https://ubta.vercel.app/',
   tagline: 'A full member management platform for Nairobi\'s largest boda boda network.',
   tags: ['DIGITAL PLATFORM', 'M-PESA', 'SUPABASE', 'ADMIN PORTAL'],
   desc: 'A complete digital platform for UBTA; member registration, M-Pesa payments, automated PDF certificate generation, membership verification, and a full admin portal. Serving 3,900+ riders across Kenya.',
