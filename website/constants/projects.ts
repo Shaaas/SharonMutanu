@@ -1,10 +1,29 @@
 import { Project } from '@/types';
 
-export const PROJECTS: Project[] = [
+export const PROJECTS: Project[] = [{
+    slug: 'pdu',
+    name: 'Party of Democratic Unity',
+    url: 'https://pduparty.co.ke/',
+    tagline: 'Official website and digital platform for the Party of Democratic Unity.',
+    tags: ['DIGITAL PLATFORM', 'POLITICAL PARTY', 'SUPABASE', 'NEXT.JS'],
+    desc: 'A complete digital platform for the Party of Democratic Unity (PDU); featuring digital member registration, automated membership verification, and a dedicated administrative portal.',
+    challenge: 'PDU needed a modern, secure digital platform to manage party memberships, handle registration workflows efficiently across Kenya, and provide instant verification without manual overhead.',
+    solution: 'Built a full-stack platform using Next.js and Supabase: public party site, digital membership registration, automated PDF membership cards, and an administrative dashboard for verifying member records.',
+    results: [
+      'Streamlined digital member registration and verification',
+      'Automated digital card generation and distribution',
+      'Centralized administrative database for party records',
+      'Fully responsive portal accessible across all mobile devices'
+    ],
+    tech: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Vercel'],
+    year: '2026',
+    category: 'Digital Platform',
+    color: '#1a3a5c',
+  },
   {
   slug: 'ubta',
   name: 'United Boda Transport Association',
-  url: 'https://ubta.vercel.app/',
+  url: 'https://ubta.co.ke/',
   tagline: 'A full member management platform for Nairobi\'s largest boda boda network.',
   tags: ['DIGITAL PLATFORM', 'M-PESA', 'SUPABASE', 'ADMIN PORTAL'],
   desc: 'A complete digital platform for UBTA; member registration, M-Pesa payments, automated PDF certificate generation, membership verification, and a full admin portal. Serving 3,900+ riders across Kenya.',
