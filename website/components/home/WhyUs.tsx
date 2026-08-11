@@ -12,7 +12,7 @@ const REASONS = [
       </svg>
     ),
     title: 'Fast Turnaround',
-    body: 'Most projects delivered in 2–4 weeks. No agency bloat, just focused, efficient execution from one person who cares.',
+    body: 'Most projects delivered in 2-4 weeks. No agency bloat, just focused, efficient execution from one person who cares.',
   },
   {
     num: '02',

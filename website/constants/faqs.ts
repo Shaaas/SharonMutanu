@@ -4,7 +4,7 @@ export const FAQS: FAQSection[] = [
   {
     cat: 'PROCESS',
     items: [
-      { q: 'How long does a project typically take?',       a: 'Starter sites take 1–2 weeks. Business packages 2–4 weeks. Custom projects 4–8 weeks. Landing pages can turn around in 48 hours.' },
+      { q: 'How long does a project typically take?',       a: 'Starter sites take 1-2 weeks. Business packages 2-4 weeks. Custom projects 4-8 weeks. Landing pages can turn around in 48 hours.' },
       { q: 'What does the process look like from my side?', a: 'Discovery call → written brief → design mockups (your review) → build → staging link → launch. You review before anything goes live.' },
       { q: 'How many revisions do I get?',                  a: 'Starter gets 2 rounds, Business gets 3, Custom gets unlimited. A revision round means a consolidated batch of feedback, not endless back-and-forth.' },
       { q: 'Do I need to prepare anything before we start?',a: 'Ideally: brand assets (logo, colours), any copy and photos you have, and examples of sites you like. Need help with those? I can refer trusted partners.' },

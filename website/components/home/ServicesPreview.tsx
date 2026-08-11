@@ -19,7 +19,7 @@ export function ServicesPreview({ goTo }: Props) {
             <h2 className="display-section reveal"><ScrambleText text="SERVICES" /></h2>
           </div>
           <p className="reveal-right" style={{ color: '#2D5BFF', fontSize: '.88rem', lineHeight: 1.9, alignSelf: 'end', maxWidth: 380 }}>
-            From marketing sites to full digital platforms — every project engineered with precision and built to perform.
+            From marketing sites to full digital platforms - every project engineered with precision and built to perform.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export function ServicesPreview({ goTo }: Props) {
           <div>
             <div className="sect-label" style={{ marginBottom: '.5rem' }}><span className="dot" />FEATURED BUILD</div>
             <div className="font-bebas" style={{ fontSize: 'clamp(1.2rem, 3vw, 1.8rem)', textTransform: 'uppercase', marginBottom: '.35rem' }}>
-              UBTA — Member Management Platform
+              UBTA - Member Management Platform
             </div>
             <p className="font-mono" style={{ fontSize: '8px', color: '#aaa', letterSpacing: '.15em', textTransform: 'uppercase', lineHeight: 1.8 }}>
               3,900+ riders · M-Pesa payments · Admin portal · Certificate generation · Supabase backend
