@@ -22,6 +22,7 @@ export const PROJECTS: Project[] = [{
     category: 'Digital Platform',
     color: '#4a0a0a',
     image: '/pdu-preview.jpg',
+  },
   {
   slug: 'ubta',
   name: 'United Boda Transport Association',
