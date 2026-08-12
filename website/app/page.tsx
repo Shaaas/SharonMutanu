@@ -115,13 +115,7 @@ function WorkPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
                     <span className="font-mono" style={{ fontSize: '8px', color: '#333', letterSpacing: '.3em' }}>COMING SOON</span>
                   </div>
                 )}
-                  <img src={p.image} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
-                ) : p.url ? (
-                  <>
-                    <iframe src={p.url} style={{ width: '200%', height: '200%', transform: 'scale(0.5)', transformOrigin: 'top left', border: 'none', pointerEvents: 'none' }} />
-                    <div style={{ position: 'absolute', inset: 0 }} />
-                  </>
-                ) : null}
+
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem' }}>
                 <div className="label-xs" style={{ color: '#2D5BFF' }}>{String(i + 1).padStart(2, '0')}</div>
