@@ -105,7 +105,16 @@ function WorkPage({ goTo }: { goTo: (p: Page, slug?: string) => void }) {
             >
               <div style={{ height: 3, background: `linear-gradient(90deg,${p.color},#2D5BFF)`, borderRadius: '2rem 2rem 0 0', margin: '-2.5rem -2.5rem 2rem' }} />
               <div style={{ height: 200, borderRadius: '1rem', overflow: 'hidden', marginBottom: '1.5rem', position: 'relative' }}>
-                {p.image ? (
+                {p.url ? (
+                  <>
+                    <iframe src={p.url} style={{ width: '200%', height: '200%', transform: 'scale(0.5)', transformOrigin: 'top left', border: 'none', pointerEvents: 'none' }} />
+                    <div style={{ position: 'absolute', inset: 0 }} />
+                  </>
+                ) : (
+                  <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span className="font-mono" style={{ fontSize: '8px', color: '#333', letterSpacing: '.3em' }}>COMING SOON</span>
+                  </div>
+                )}
                   <img src={p.image} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
                 ) : p.url ? (
                   <>
