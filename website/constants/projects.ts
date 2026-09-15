@@ -1,6 +1,27 @@
 import { Project } from '@/types';
 
-export const PROJECTS: Project[] = [{
+export const PROJECTS: Project[] = [
+  {
+    slug: 'gifted-kids-creative-centre',
+    name: 'Gifted Kids Creative Centre',
+    url: 'https://giftedkidscreativecentre.com/',
+    tagline: 'A digital home for a Nairobi talent academy that has been shaping young performers since 2014.',
+    tags: ['EDUCATION', 'WHATSAPP INTEGRATION', 'UI/UX'],
+    desc: 'A marketing and enrolment site for GKCC, a children and teens talent academy in Karen and Ngara, Nairobi. Covers six creative pathways - Acting & Drama, Public Speaking, Media & Film, Theatre Studies, Podcasting, and AI in Creative Arts - with alumni success stories and a direct WhatsApp enrolment flow.',
+    challenge: 'GKCC had over a decade of real credibility - alumni in Netflix productions and a Hollywood film, two Nairobi locations, hundreds of learners - but no site that reflected any of it. Parents researching enrolment had no clear way to see the programs on offer or trust the institution before reaching out.',
+    solution: 'Designed and built a clean, fast marketing site structured around discovery and trust: a clear breakdown of all six program pathways, alumni success stories built into the homepage, and a one-tap WhatsApp enrolment path so parents can reach the centre directly without a contact form.',
+    results: [
+      'Clear program pages across six distinct creative pathways',
+      'One-tap WhatsApp enrolment integration for parents',
+      'Alumni success stories surfaced on the homepage for social proof',
+      'Two-location footprint (Karen and Ngara) reflected clearly in site structure',
+    ],
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    year: '2026',
+    category: 'Website',
+    color: '#3a1a05',
+  },
+  {
     slug: 'pdu',
     name: 'Party of Democratic Unity',
     url: 'https://pduparty.co.ke/',
