@@ -2,6 +2,28 @@ import { Project } from '@/types';
 
 export const PROJECTS: Project[] = [
   {
+    slug: 'afriface-hub',
+    name: 'AfriFace Hub',
+    url: 'https://afrifacehub.com/',
+    tagline: 'A full African streaming platform. Movies, series, and African narratives — built from scratch.',
+    tags: ['STREAMING PLATFORM', 'VIDEO HOSTING', 'M-PESA', 'USER AUTH', 'SAAS'],
+    desc: 'A complete video streaming platform for African content. Users can browse movies and series, purchase titles via M-Pesa, stream video, manage a watchlist, and access their account. Built entirely from scratch. African narratives by African narrators.',
+    challenge: 'Building a streaming platform that works reliably on Kenyan internet speeds, handles M-Pesa payments per title, manages user authentication and access control, and hosts video content efficiently while keeping the experience clean and fast.',
+    solution: 'Built a full-stack streaming platform with secure user authentication, per-title M-Pesa payment flows, video hosting and streaming, browsing and search, personal watchlists, and account management. Features hero content, new releases, and series categorisation.',
+    results: [
+      'Full streaming platform live with movies and series available to purchase',
+      'M-Pesa per-title payments at KES 100 - no subscription required',
+      'User authentication with personal watchlists and account management',
+      'Series and movies categorised with browse, search, and featured content',
+      'Built and deployed solo from zero to production',
+    ],
+    tech: ['Next.js', 'TypeScript', 'Supabase', 'M-Pesa Daraja API', 'Video Hosting', 'Tailwind CSS', 'Vercel'],
+    year: '2025',
+    category: 'Streaming Platform',
+    color: '#0f0f10',
+    image: '/afriface-preview.jpg',
+  },
+  {
     slug: 'gifted-kids-creative-centre',
     name: 'Gifted Kids Creative Centre',
     url: 'https://giftedkidscreativecentre.com/',
