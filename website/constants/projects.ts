@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
   {
     slug: 'pdu',
     name: 'Party of Democratic Unity',
-    url: 'https://pduparty.co.ke/',
+    url: 'https://pduparty.vercel.app/',
     tagline: 'A full political party management system built on constitutional rules and real Kenyan administrative data.',
     tags: ['POLITICAL PLATFORM', 'M-PESA', 'SUPABASE', 'ADMIN PORTAL', 'PDF CERTIFICATES'],
     desc: 'A complete digital platform for PDU, a registered Kenyan political party. Two registration flows (membership and nomination), M-Pesa payments, automatic PDF certificate generation with QR verification codes, and a full admin dashboard for managing members, aspirants, news, events, and resources.',
