@@ -74,6 +74,7 @@ export const TECH_STACK: TechItem[] = [
   { name: 'Figma',         cat: 'DESIGN'    },
   { name: 'Vercel',        cat: 'DEPLOYMENT'},
   { name: 'Framer Motion', cat: 'ANIMATION' },
+  { name: 'Bunny.net',    cat: 'VIDEO CDN'  },
   { name: 'Python',        cat: 'LANGUAGE'  },
   { name: 'FastAPI',       cat: 'BACKEND'   },
 ];
