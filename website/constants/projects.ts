@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     year: '2026',
     category: 'Website',
     color: '#2a1a1a',
-    image: '',
+    image: '/healing-touch-preview.png',
   },
   {
     slug: 'gifted-kids-creative-centre',
